@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- Registration Form-->
+<h1> Please Enter Your Information Below to Register <span data-ng-bind="page"> </span></h1>
+    <form onsubmit="myFunction();">
+        First Name: <input type="text" name="FirstName" id="firstName" value=""placeholder="i.e. John"/><br/><br/>
+        Last Name:  <input type="text" name="LastName" id="lastName" value=""placeholder="i.e. Doe"/><br/><br/>
+        Username:   <input type="text" name="userName" id="userName" value=""placeholder="Pick a Unique User"/><br/><br/>
+        Password:   <input type="password" name="password" id="password" value=""/><br/><br/>
+        <input type="submit" value="Submit">
+        Already have an account. Click <button onclick="location.href = 'login.html';" id="registerButton" class="float-left submit-button" >Back</button> To Login
+    </form>
+<script>
+function myFunction(){
+    // Storing form data locally, not doing much with it yet, still new to Web Dev and giving this my best shot
+    localStorage.setItem("firstName",document.getElementById("firstName").value);
+    localStorage.setItem("lastName",document.getElementById("lastName").value);
+    localStorage.setItem("userName",document.getElementById("lastName").value);
+    localStorage.setItem("password",document.getElementById("password").value);
+
+    window.event.returnValue = false;
+    document.location.href="login.html";
+}
+// Registration function for future use
+function setRegistration(){
+
+}
+setRegistration();
+
+
+</script>
+</body>
+</html>

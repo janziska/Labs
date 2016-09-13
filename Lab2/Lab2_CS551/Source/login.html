@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="" data-ng-app="myApp">
+<head>
+  <meta t="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+  <link rel="stylesheet" href="css/main.css">    
+</head>
+
+<body>
+    <!-- Login Display-->
+    <div ng-controller="login" data-ng-init="page='The Login Page'">
+        <h1>Welcome To <span data-ng-bind="page"> </span></h1>
+        Username: <input type="text" name="userName" id="userName" data-ng-model="login.uname"/><br/><br/>
+        Password: <input type="password" name="password" id="password" data-ng-model="login.pword"/><br/><br/>
+        <button onclick="location.href = 'map.html';" id="loginButton" class="float-left submit-button" >Login</button>
+        New here? Click <button onclick="location.href = 'register.html';" id="registerButton" class="float-left submit-button" >Register</button>
+    </div>
+<script>
+    // Empty controller for future development
+    var app = angular.module('myApp', []);
+    app.controller('login', function ($scope) {
+    });
+
+</script>
+</body>
+</html>

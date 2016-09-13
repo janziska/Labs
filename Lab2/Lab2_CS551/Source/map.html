@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="" data-ng-app="GoogleDirection">
+
+<head>
+    <meta t="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Weather Tool</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAWhSE1HAi753_M8rcFTfcbBXUQInf8y6c">
+    </script>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        #map-canvas {
+            width: 650px;
+            height: 450px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1><center>Welcome to Weather Mapper</center></h1>
+<h2><center>Enter A Start and End Address</center></h2>
+<!-- Map Display-->
+<table style="width:100%">
+    <tr>
+        <td width="60%">
+            <div id="left">
+                <div class="wrapp" ng-controller="googlemapoutput">
+                    <div class="row">
+                        <input type="text"  ng-model="startlocation" id="startlocation"/>
+
+                        <input type="text"  ng-model="endlocation" id="endlocation" />
+
+                        <script>
+                            //autocomplete textbox 'from'
+                            var fromText = document.getElementById('endlocation');
+                            var fromAuto = new google.maps.places.Autocomplete(fromText);
+
+                            //autocomplete textbox 'to'
+                            var toText = document.getElementById('startlocation');
+                            var toAuto = new google.maps.places.Autocomplete(toText);
+                            //toAuto.bindTo('bounds', map);
+
+                        </script>
+                        <button id="btn" ng-click="calcRoute()">
+                            Get Direction
+                        </button>
+                        <br/></br>
+
+                    </div>
+                    <div id="map-canvas" style="height: 400px;"></div>
+
+                </div>
+            </div>
+        </td>
+        <!-- Weather for Start Location-->
+        <td width="20%">
+            <div id="right">
+                <h3> <div id="title"></div></h3>
+                <div id="name"></div>
+                <div id="description"></div>
+                <div id="temp"></div>
+                <div id="temp_min"></div>
+                <div id="temp_max"></div>
+            </div>
+        </td>
+        <!-- Weather for End Location-->
+        <td width="20%">
+            <div id="center">
+                <h3> <div id="end_title"></div></h3>
+                <div id="end_name"></div>
+                <div id="end_description"></div>
+                <div id="end_temp"></div>
+                <div id="end_temp_min"></div>
+                <div id="end_temp_max"></div>
+            </div>
+        </td>
+
+    </tr>
+</table>
+
+
+
+
+</body>
+</html>
+
+
+<script>
+    // Initial Map code from angular demo in class
+    angular.module('GoogleDirection', [])
+            .controller('googlemapoutput', function ($scope) {
+
+                var map;
+                var mapOptions;
+
+                var directionsDisplay = new google.maps.DirectionsRenderer({
+                    draggable: true
+                });
+                var directionsService = new google.maps.DirectionsService();
+
+                // Initialize Variables
+                $scope.initialize = function () {
+                    var pos = new google.maps.LatLng(0, 0);
+
+                    var mapOptions = {
+                        zoom: 3,
+                        center: pos
+                    };
+
+
+                    map = new google.maps.Map(document.getElementById('map-canvas'),
+                            mapOptions);
+
+                };
+
+                // Find  lat and long coordinates
+                var loc=[];
+                $scope.calcRoute = function () {
+                    var end = document.getElementById('endlocation').value;
+                    var start = document.getElementById('startlocation').value;
+
+
+                    var request = {
+                        origin: start,
+                        destination: end,
+                        travelMode: google.maps.TravelMode.DRIVING
+                    };
+
+                    directionsService.route(request, function (response, status) {
+                        if (status == google.maps.DirectionsStatus.OK) {
+                            directionsDisplay.setMap(map);
+                            directionsDisplay.setDirections(response);
+                            // Status log
+                            console.log(status);
+                            console.log(start);
+                        }
+                    });
+
+
+                    // Create variable for request from Open Weather
+                    var xhttp = new XMLHttpRequest();
+
+                    // Get start location weather from Open Weather
+                    xhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+start+"&APPID=1c4c6c04b77e9d6ebc6b3797d0366f92", false);
+                    xhttp.send();
+                    var startData =xhttp.responseText;
+
+                    // Parse and process starting weather
+                    var startJson = JSON.parse(startData);
+
+                    // Send starting point weather to html
+                    // Confession time - I know I should have used Angular though I am new to web development and wanted to start simple
+                    document.getElementById("title").innerHTML = "Starting Weather";
+                    document.getElementById("name").innerHTML = "City: " + startJson.name;
+                    document.getElementById("description").innerHTML = "Desc: " + startJson.weather[0].description;
+                    document.getElementById("temp").innerHTML = "Temp: " + parseFloat(startJson.main.temp*(9/5) - 459).toFixed(2);
+                    document.getElementById("temp_min").innerHTML = "Min Temp: " + parseFloat(startJson.main.temp_min*(9/5) - 459).toFixed(2);
+                    document.getElementById("temp_max").innerHTML = "Max Temp: " + parseFloat(startJson.main.temp_max*(9/5) - 459).toFixed(2);
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("title").innerHTML = this.responseText;
+                            document.getElementById("name").innerHTML = this.responseText;
+                            document.getElementById("description").innerHTML = this.responseText;
+                            document.getElementById("temp").innerHTML = this.responseText;
+                            document.getElementById("temp_min").innerHTML = this.responseText;
+                            document.getElementById("temp_max").innerHTML = this.responseText;
+                        }
+                    };
+
+                    // Create variable for request from Open Weather end point
+                    var endxhttp = new XMLHttpRequest();
+
+                    // Get start location weather from Open Weather
+                    endxhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+end+"&APPID=1c4c6c04b77e9d6ebc6b3797d0366f92", false);
+                    endxhttp.send();
+                    var endData =endxhttp.responseText;
+
+                    // Parse and process starting weather
+                    var endJson = JSON.parse(endData);
+
+                    // Send end of route weather to HTML
+                    document.getElementById("end_title").innerHTML = "Ending Weather";
+                    document.getElementById("end_name").innerHTML = "City: " + endJson.name;
+                    document.getElementById("end_description").innerHTML = "Desc: " + endJson.weather[0].description;
+                    document.getElementById("end_temp").innerHTML = "Temp: " + parseFloat(endJson.main.temp*(9/5) - 459).toFixed(2);
+                    document.getElementById("end_temp_min").innerHTML = "Min Temp: " + parseFloat(endJson.main.temp_min*(9/5) - 459).toFixed(2);
+                    document.getElementById("end_temp_max").innerHTML = "Max Temp: " + parseFloat(endJson.main.temp_max*(9/5) - 459).toFixed(2);
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("end_title").innerHTML = this.responseText;
+                            document.getElementById("end_name").innerHTML = this.responseText;
+                            document.getElementById("end_description").innerHTML = this.responseText;
+                            document.getElementById("end_temp").innerHTML = this.responseText;
+                            document.getElementById("end_temp_min").innerHTML = this.responseText;
+                            document.getElementById("end_temp_max").innerHTML = this.responseText;
+                        }
+                    };
+                };
+
+                google.maps.event.addDomListener(window, 'load', $scope.initialize);
+
+
+
+
+            });
+
+
+
+     //open weather api
+    //http://api.openweathermap.org/data/2.5/forecast?lat=35&lon=139&APPID=1c4c6c04b77e9d6ebc6b3797d0366f92
+
+</script>
