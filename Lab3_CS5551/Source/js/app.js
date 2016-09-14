@@ -3,15 +3,6 @@
  */
 'use strict';
 
-// Uclassify Api key for mood
-// read yyckHiiOgGhQ
-// Write t0gVcFMv7JGd
-
-// Google client id - 872368336329-smi8nn873rvhopil30abkemqn1lukuh9.apps.googleusercontent.com
-// client secret - VJL00eeSj7buen7p6hyuWm1G
-// https://www.googleapis.com/language/translate/v2?key=YOUR_API_KEY&q=hello%20world&source=en&target=de
-// simple google api - AIzaSyCvMpcuLjolygMmSkHIIHIgnkq-10yIEXM
-
 
 
 
@@ -39,6 +30,7 @@ function signOut() {
 
 }
 
+// sign in actions with Google
 function onSignIn(googleUser) {
     // Useful data for your client-side scripts:
     var profile = googleUser.getBasicProfile();
@@ -54,11 +46,13 @@ function onSignIn(googleUser) {
     console.log("ID Token: " + id_token);
 }
 
-
+// Once signed in to Google, go to main translation page
 function onSuccess(googleUser) {
     console.log('Signed in as: ' + googleUser.getBasicProfile().getName());
     window.location.href="translate.html";
 }
+
+// Code for translation module
 angular.module('myApp', [])
     .controller('View1Ctrl', function ($scope, $http) {
 
@@ -66,18 +60,21 @@ angular.module('myApp', [])
 
         $scope.myFunction = function(){
 
+            // Get form info
             var sourceText = document.getElementById("sourceText").value;
             var sourceLanguage = document.getElementById("from").value;
             var targetLanguage = document.getElementById("to").value;
 
+            // translate the text
            $http.get("https://www.googleapis.com/language/translate/" + "v2?key=AIzaSyCvMpcuLjolygMmSkHIIHIgnkq-10yIEXM&source="
                + sourceLanguage + "&target=" + targetLanguage + "&q=" + sourceText)
                .then(function(response){
 
+                   // Store translation
                    $scope.transText = "Translation: " + response.data.data.translations[0].translatedText;
                   var transText =  "Translation: " + response.data.data.translations[0].translatedText;
 
-
+                   // Get sentiment
                   $http.get("http://gateway-a.watsonplatform.net/calls/text/TextGetTextSentiment?" +
                       "apikey=6374c076c0afdefeb93b382ecf5610fb71710307&outputMode=json&text=" + transText)
                       .then(function(response2){
@@ -86,39 +83,23 @@ angular.module('myApp', [])
                           // Angular broke Google Sign Out so I had to stop using it
                           $scope.score =  "Score: " + parseFloat(response2.data.docSentiment.score*100).toFixed(0);
                           $scope.type =   "Type:  " +  response2.data.docSentiment.type;
-                          // Set width pasted on score
-                          var width = response2.data.docSentiment.score*200;
-                          var type = response2.data.docSentiment.type;
 
+                          // Set width pasted on score
+                          var percent = parseFloat(response2.data.docSentiment.score*100).toFixed(0);
+                          var type = response2.data.docSentiment.type;
 
                           // thanks to w3 School for the idea
                           // Create meter
-                          document.getElementById("canvas_head").innerHTML = "0 &nbsp &nbsp &nbsp &nbsp &nbsp " +
-                              "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp" +
-                              "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 100";
-                          document.getElementById("canvas").style.border = "1px solid #000000";
-                          var c = document.getElementById("canvas");
-                          var ctx = c.getContext("2d");
-
-                          // Create gradient
-                          var grd = ctx.createLinearGradient(0,0,200,0);
-
-                          // Set color for positive or negative
-                          if(type=="positive")
+                          if(type == "positive")
                           {
-                              grd.addColorStop(0,"green");
+                              $scope.state = "progress-bar-success";
                           }
                           else
                           {
-                              grd.addColorStop(0,"red");
+                              $scope.state = "progress-bar progress-bar-danger";
                           }
 
-                          grd.addColorStop(1,"white");
-                            // Fill with gradient
-                          ctx.fillStyle = grd;
-
-                          ctx.fillRect(10,10,width,80);
-
+                          $scope.myStyle = {width: percent + '%'};
 
                       });
 

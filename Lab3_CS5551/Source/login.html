@@ -20,27 +20,33 @@
 <!-- from https://developers.google.com/identity/sign-in/web/sign-in -->
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id" content="872368336329-smi8nn873rvhopil30abkemqn1lukuh9.apps.googleusercontent.com">
     <script src="js/app.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<h1>Lab 3 - Welcome to the Emotional Translate</h1>
-<h3>Sign-In Below Using Google</h3>
+<div class="jumbotron text-center">
+    <h1><center>Lab 3 - Welcome to the Emotional Translate</center></h1>
+    <h3><center>Sign-In Below Using Google</center></h3>
+</div>
+
 <!-- sign-in -->
 <table style="width:100%">
     <tr>
-        <td width="5%" style="vertical-align:top">
+        <td width="45%" style="vertical-align:top">
             <div id="left"></div>
         </td>
-        <td width="20%" style="vertical-align:top">
+        <td width="25%" style="vertical-align:top">
             <!-- sign-in -->
-            </br>
+            </br></br></br>
             <div class="g-signin2" data-onsuccess="onSuccess">
             </div>
         </td>
-        <td width="75%" style="vertical-align:top">
+        <td width="30%" style="vertical-align:top">
             <div id="right">
                 <!-- sign-out -->
                 <a href="#" onclick="signOut();">Sign out</a>
