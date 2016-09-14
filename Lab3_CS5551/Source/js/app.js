@@ -93,13 +93,15 @@ angular.module('myApp', [])
                           if(type == "positive")
                           {
                               $scope.state = "progress-bar-success";
+                              $scope.myStyle = {width: percent + '%'};
                           }
                           else
                           {
                               $scope.state = "progress-bar progress-bar-danger";
+                              $scope.myStyle = {width: -1*percent + '%'};
                           }
 
-                          $scope.myStyle = {width: percent + '%'};
+
 
                       });
 
