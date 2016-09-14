@@ -26,17 +26,53 @@ angular.module('myApp', [])
             var sourceLanguage = document.getElementById("from").value;
             var targetLanguage = document.getElementById("to").value;
 
-           $http.get("https://www.googleapis.com/language/translate/" + "v2?key=AIzaSyCvMpcuLjolygMmSkHIIHIgnkq-10yIEXM&source=" + sourceLanguage + "&target=" + targetLanguage + "&q=" + sourceText)
+           $http.get("https://www.googleapis.com/language/translate/" + "v2?key=AIzaSyCvMpcuLjolygMmSkHIIHIgnkq-10yIEXM&source="
+               + sourceLanguage + "&target=" + targetLanguage + "&q=" + sourceText)
                .then(function(response){
 
                    $scope.transText = "Translation: " + response.data.data.translations[0].translatedText;
                   var transText =  "Translation: " + response.data.data.translations[0].translatedText;
 
 
-                  $http.get("https://api.uclassify.com/v1/uClassify/Sentiment/classify/?readKey=yyckHiiOgGhQ&texts=hi")
-                      .then(function(response){
-                          alert(response.data);
-                          $scope.pos =  "Positive: " + response.data;
+                  $http.get("http://gateway-a.watsonplatform.net/calls/text/TextGetTextSentiment?" +
+                      "apikey=6374c076c0afdefeb93b382ecf5610fb71710307&outputMode=json&text=" + transText)
+                      .then(function(response2){
+                            console.log(transText);
+                          $scope.score =  "Score: " + parseFloat(response2.data.docSentiment.score*100).toFixed(0);
+                          $scope.type =   "Type:  " +  response2.data.docSentiment.type;
+                          // Set width pasted on score
+                          var width = response2.data.docSentiment.score*200;
+                          var type = response2.data.docSentiment.type;
+
+
+                         // thanks to w3 School for the idea
+                          // Create meter
+                          document.getElementById("canvas_head").innerHTML = "0 &nbsp &nbsp &nbsp &nbsp &nbsp " +
+                              "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp" +
+                              "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 100";
+                          document.getElementById("canvas").style.border = "1px solid #000000";
+                          var c = document.getElementById("canvas");
+                          var ctx = c.getContext("2d");
+
+                          // Create gradient
+                          var grd = ctx.createLinearGradient(0,0,200,0);
+
+                          // Set color for positive or negative
+                          if(type=="positive")
+                          {
+                              grd.addColorStop(0,"green");
+                          }
+                          else
+                          {
+                              grd.addColorStop(0,"red");
+                          }
+
+                          grd.addColorStop(1,"white");
+                            // Fill with gradient
+                          ctx.fillStyle = grd;
+
+                          ctx.fillRect(10,10,width,80);
+
 
                       });
 
