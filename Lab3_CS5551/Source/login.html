@@ -1,0 +1,91 @@
+<!--
+  Copyright (c) 2011 Google Inc.
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+  http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+  To run this sample, set apiKey to your application's API key and clientId to
+  your application's OAuth 2.0 client ID. They can be generated at:
+    https://console.developers.google.com/apis/credentials?project=_
+  Then, add a JavaScript origin to the client that corresponds to the domain
+  where you will be running the script. Finally, activate the People API at:
+    https://console.developers.google.com/apis/library?project=_
+-->
+
+<!-- from https://developers.google.com/identity/sign-in/web/sign-in -->
+<html>
+<head>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="872368336329-smi8nn873rvhopil30abkemqn1lukuh9.apps.googleusercontent.com">
+</head>
+
+<body>
+<h1>Lab 3 - Welcome to the Emotional Translate</h1>
+<h3>Sign-In Below Using Google</h3>
+<!-- sign-in -->
+<table style="width:100%">
+    <tr>
+        <td width="5%" style="vertical-align:top">
+            <div id="left"></div>
+        </td>
+        <td width="20%" style="vertical-align:top">
+            <!-- sign-in -->
+            </br>
+            <div class="g-signin2" data-onsuccess="onSuccess">
+            </div>
+        </td>
+        <td width="75%" style="vertical-align:top">
+            <div id="right">
+                <!-- sign-out -->
+                <a href="#" onclick="signOut();">Sign out</a>
+            </div>
+        </td>
+
+    </tr>
+</table>
+<!-- sign-in script -->
+<script>
+    function onSuccess(googleUser) {
+        console.log('Signed in as: ' + googleUser.getBasicProfile().getName());
+        window.location.href="translate.html";
+    }
+</script>
+
+<!-- sign-out script -->
+<script>
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+            console.log('User signed out.');
+        });
+
+    }
+</script>
+
+<!-- User inf  o script -->
+<script>
+    function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+    };
+
+
+</script>
+</body>
+<!-- [END body] -->
+</html>
