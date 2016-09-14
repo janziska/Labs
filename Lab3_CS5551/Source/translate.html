@@ -59,24 +59,27 @@
     </select> <br/><br/>
 
     <!-- Submit Button  -->
-    <button type="button" class="btn btn-primary" id="btn_getReview" ng-click="myFunction()"> Get Translation </button><br/><br/><br/>
+    <button type="button" class="btn btn-primary" id="btn_getReview" ng-click="myFunction()">
+        Get Translation </button><br/><br/><br/>
 
     <!-- Translated Text -->
     {{transText}}<br/>
     {{score}}<br/>
     {{type}}<br/>
 
-    <!-- Thanks to http://jsfiddle.net/un8B5/ for helping me figure this out -->
+    <!-- Thanks to http://jsfiddle.net/un8B5/ for helping me figure  out how to do a bootstrap prgress bar -->
     <div class="progress">
-        <div class="progress-bar {{state}}" role="progressbar" aria-valuenow="{{value}}" aria-valuemin="0" aria-valuemax="100" ng-style="myStyle"> <span class="sr-only">{{value}}%</span>
+        <div class="progress-bar {{state}}" role="progressbar" aria-valuenow="{{value}}" aria-valuemin="0"
+             aria-valuemax="100" ng-style="myStyle"> <span class="sr-only">{{value}}%</span>
             {{score}} out of 100
         </div>
     </div>
 
 
-</div>
+    </div>
 
 </td>
+        <!-- Sign Out -->
         <td width="20%" style="vertical-align:top">
             <div id="right">
                 <!-- sign-out -->
