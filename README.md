@@ -5,4 +5,4 @@ Lab 2 -
 
 Lab 3 - https://github.com/janziska/Labs/wiki/Lab3
 
-Lab 4 - https://github.com/janziska/Labs/wiki/Lab3---Emotional-Translate
+Lab 4 - https://github.com/janziska/Labs/wiki/Lab-4---Sentiment-App
