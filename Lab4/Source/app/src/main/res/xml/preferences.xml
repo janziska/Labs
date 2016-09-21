@@ -2,5 +2,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <EditTextPreference android:title="Your Name"
         android:key="username"
+        android:background= "@null"
         android:summary="Please provide your username"></EditTextPreference>
 </PreferenceScreen>

@@ -2,8 +2,7 @@ package tutorial.cs5551.com.translateapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-//import android.preference.PreferenceActivity;
-//import android.preference.PreferenceFragment;
+
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -21,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //getFragmentManager().beginTransaction().replace(android.R.id.content, new MyPreferenceFragment()).commit();
+
 
     }
 
@@ -32,15 +31,6 @@ public class LoginActivity extends AppCompatActivity {
 
         return true;
     }
-    /*public static class MyPreferenceFragment extends PreferenceFragment
-    {
-        @Override
-        public void onCreate(final Bundle savedInstanceState)
-        {
-            super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.preferences);
-        }
-    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -51,7 +41,8 @@ public class LoginActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            startActivityForResult(new Intent(android.provider.Settings.ACTION_APPLICATION_SETTINGS), 0);
+            //getFragmentManager().beginTransaction().replace(android.R.id.content, new MyPreferenceFragment()).commit();
+           startActivityForResult(new Intent(android.provider.Settings.ACTION_APPLICATION_SETTINGS), 0);
             return true;
         }
 
@@ -91,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
         intent.setType("message/rfc822");
         intent.putExtra(Intent.EXTRA_EMAIL, new String[] { "jwnf7b@mail.umkc.edu" });
         intent.putExtra(Intent.EXTRA_SUBJECT, "Support Request");
-        intent.putExtra(Intent.EXTRA_TEXT, "Give us some details");
+        intent.putExtra(Intent.EXTRA_TEXT, "Help me with the Sentiment App");
         startActivity(Intent.createChooser(intent, "send email to support.."));
     }
 }

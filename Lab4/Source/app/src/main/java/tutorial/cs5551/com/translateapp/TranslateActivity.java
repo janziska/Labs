@@ -1,24 +1,19 @@
 package tutorial.cs5551.com.translateapp;
 
-import android.content.Context;
+//import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
-
-import org.json.JSONArray;
+//import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
-
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.OkHttpClient;
@@ -27,8 +22,7 @@ import okhttp3.Response;
 
 public class TranslateActivity extends AppCompatActivity {
 
-    //String API_URL = "https://api.fullcontact.com/v2/person.json?";
-    //String API_KEY = "b29103a702edd6a";
+
     String sourceText;
     TextView outputTextView;
     TextView outputTypeView;
@@ -39,6 +33,7 @@ public class TranslateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_translate);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         outputTextView = (TextView) findViewById(R.id.txt_Result);
         outputTypeView = (TextView) findViewById(R.id.txt_Type);
     }
@@ -119,6 +114,7 @@ public class TranslateActivity extends AppCompatActivity {
         } catch (Exception ex) {
             outputTextView.setText(ex.getMessage());
 
+
         }
 
     }
@@ -128,7 +124,32 @@ public class TranslateActivity extends AppCompatActivity {
         intent.setType("message/rfc822");
         intent.putExtra(Intent.EXTRA_EMAIL, new String[] { "jwnf7b@mail.umkc.edu" });
         intent.putExtra(Intent.EXTRA_SUBJECT, "Support Request");
-        intent.putExtra(Intent.EXTRA_TEXT, "Give us some details");
+        intent.putExtra(Intent.EXTRA_TEXT, "Help me with the Sentiment App");
         startActivity(Intent.createChooser(intent, "send email to support.."));
     }
+
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_login, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            startActivityForResult(new Intent(android.provider.Settings.ACTION_APPLICATION_SETTINGS), 0);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }

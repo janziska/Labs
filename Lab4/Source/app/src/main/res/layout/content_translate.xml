@@ -2,8 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootRL"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background">
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -33,8 +35,9 @@
             android:layout_gravity="right"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="40dp"
-            android:textColor="#d92b2b" />
+            android:layout_marginBottom="25dp"
+            android:textColor="#d92b2b"
+            android:layout_marginTop="45dp" />
 
         <EditText
             android:id="@+id/txt_Email"
@@ -42,7 +45,8 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:hint="Enter text to get sentiment"
-            android:layout_weight="0.04" />
+            android:layout_weight="0.04"
+            android:textColor="#f7eeee" />
 
         <TextView
             android:id="@+id/txt_Result"
@@ -73,6 +77,17 @@
             android:onClick="translateText"
             android:textColor="#ba6349"
             android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txt_Error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:textColor="#3b40c6"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.20" />
 
     </LinearLayout>
 
