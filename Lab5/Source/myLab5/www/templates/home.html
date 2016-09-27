@@ -1,0 +1,26 @@
+<ion-view view-title="Home">
+  <ion-content>
+   
+    <form name="homeForm">
+                <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Input</span></br>
+                    <input type="text" placeholder="Tell Us What Makes You Happy..." ng-model="sourceText" required>
+                    
+               
+            </ion-list>
+                   
+            
+            <button class="button button-stable button-block" ng-click="myFunction(sourceText)">Submit</button> 
+          
+        </form>
+  
+    <div ng-repeat="i in venueList">
+      {{i.name}} - {{i.location}}
+    </div>
+    
+  
+    
+
+  </ion-content>
+</ion-view>
