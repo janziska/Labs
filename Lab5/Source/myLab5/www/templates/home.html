@@ -4,18 +4,19 @@
     <form name="Form">
             <ion-list>
                 <label class="item item-input">
-                    <span class="input-label">Hobbies</span></br>
+                    <span class="input-label">Likes</span></br>
                     <input type="text" placeholder="Give Us at Least Five Words About What You Enjoy Doing..." ng-model="sourceText" required>
                 </label>
                <label class="item item-input">
                     <span class="input-label">City</span></br>
                     <input type="text" placeholder="Tell us where you are" ng-model="location"  required>
                 </label>
-                 <button class="button button-block button-calm" ng-disabled="From.$invalid" ng-click="myFunction(sourceText, location)">Submit</button> 
+                 <button class="button button-block button-calm" ng-disabled="Form.$invalid" ng-click="myFunction(sourceText, location)">Submit</button> 
             </ion-list>
-           
-          
+           </br>
+          <span ng-show='name.length > 0'> Places to See </span>
         </form>
+        </br>
   
     <div ng-repeat="i in venueList">
       {{i.name}} - {{i.location}}

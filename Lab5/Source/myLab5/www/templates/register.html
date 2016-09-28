@@ -5,7 +5,6 @@
                 <label class="item item-input">
                     <span class="input-label">Name</span></br>
                     <input type="text" placeholder="enter your name..." ng-model="name" required>
-                    
                 </label>
 
                 <label class="item item-input">
@@ -16,24 +15,23 @@
                 <label class="item item-input">
                     <span class="input-label">Email</span></br>
                     <input type="email" placeholder="you@domain.com" ng-model="email" required>
-                    
                 </label>
+                
                 <label class="item item-input">
                     <span class="input-label">Password</span></br>
                     <input type="password" placeholder="At least 6 characters" ng-model="password" ng-minlength="6" required>
                 </label>
                
             </ion-list>
-            
-                   
-            
+
             <button class="button button-block button-calm" ng-disabled="myForm.$invalid" ng-click="signupEmail(name,username, email, password)">Done</button> 
-          {{myForm.email.$valid}}
-        </form>
         <!-- Gives the reasons the form is invalid, could not get this part to work -->
-    <div>            
-     <span ng-show="myForm.email.$invalid && !myForm.email.$pristine">* Username must be an email address</span>
-      </div>
+        <span ng-show="myForm.email.$error.email">Not a valid e-mail address</span>       
+        </form>
+        
+              
+   
+      
     </ion-content>
 </ion-view>
 
