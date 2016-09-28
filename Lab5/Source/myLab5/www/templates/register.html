@@ -28,12 +28,12 @@
                    
             
             <button class="button button-block button-calm" ng-disabled="myForm.$invalid" ng-click="signupEmail(name,username, email, password)">Done</button> 
-          
+          {{myForm.email.$valid}}
         </form>
         <!-- Gives the reasons the form is invalid, could not get this part to work -->
-                     {{myForm.email.$valid}}
-                    <span ng-show="myForm.email.$invalid && !myForm.email.$pristine">* Username must be an email address</span>
-      
+    <div>            
+     <span ng-show="myForm.email.$invalid && !myForm.email.$pristine">* Username must be an email address</span>
+      </div>
     </ion-content>
 </ion-view>
 

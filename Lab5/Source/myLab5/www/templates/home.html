@@ -1,17 +1,19 @@
 <ion-view view-title="Home">
-  <ion-content>
+  <ion-content padding = "true">
    
-    <form name="homeForm">
-                <ion-list>
+    <form name="Form">
+            <ion-list>
                 <label class="item item-input">
-                    <span class="input-label">Input</span></br>
-                    <input type="text" placeholder="Tell Us What Makes You Happy..." ng-model="sourceText" required>
-                    
-               
+                    <span class="input-label">Hobbies</span></br>
+                    <input type="text" placeholder="Give Us at Least Five Words About What You Enjoy Doing..." ng-model="sourceText" required>
+                </label>
+               <label class="item item-input">
+                    <span class="input-label">City</span></br>
+                    <input type="text" placeholder="Tell us where you are" ng-model="location"  required>
+                </label>
+                 <button class="button button-block button-calm" ng-disabled="From.$invalid" ng-click="myFunction(sourceText, location)">Submit</button> 
             </ion-list>
-                   
-            
-            <button class="button button-stable button-block" ng-click="myFunction(sourceText)">Submit</button> 
+           
           
         </form>
   

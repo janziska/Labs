@@ -56,7 +56,7 @@ angular.module('starter.controllers', [])
 
 // Home page lookup
 .controller('HomeCtrl', function($scope, $http, $ionicPopup, $state, $window) {
-     $scope.myFunction = function(source){
+     $scope.myFunction = function(source, city){
            $scope.venueList = new Array();
            
 
@@ -68,7 +68,8 @@ angular.module('starter.controllers', [])
                    // Store translation
                    $scope.keyWord = response.data.keywords[0].text;
                    var keyWord = response.data.keywords[0].text;
-                    $http.get("https://api.foursquare.com/v2/venues/search?client_id=EMPP4S253KDVUU5KJHWUCOEANVTQJP1O11SOKYMZW2TY2Y2A&client_secret=4ZDMZR2EVRZDAV13JBYLT4WNRPO4GBEDOFXTOZ0UZTH42AFA&v=20160215&limit=5&near=Grandview&query=" + keyWord)
+                    $http.get("https://api.foursquare.com/v2/venues/search?client_id=EMPP4S253KDVUU5KJHWUCOEANVTQJP1O11SOKYMZW2TY2Y2A" +
+                    "&client_secret=4ZDMZR2EVRZDAV13JBYLT4WNRPO4GBEDOFXTOZ0UZTH42AFA&v=20160215&limit=5&near=" + city + "&query=" + keyWord)
                           .then(function(response2){
                             // Borrowed this from Tutorial 3
                             for (var i = 0; i < response2.data.response.venues.length; i++) {
