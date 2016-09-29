@@ -56,6 +56,7 @@ angular.module('starter.controllers', [])
 
 // Home page lookup
 .controller('HomeCtrl', function($scope, $http, $ionicPopup, $state, $window) {
+     
      $scope.myFunction = function(source, city){
            $scope.venueList = new Array();
            
@@ -72,6 +73,7 @@ angular.module('starter.controllers', [])
                     "&client_secret=4ZDMZR2EVRZDAV13JBYLT4WNRPO4GBEDOFXTOZ0UZTH42AFA&v=20160215&limit=5&near=" + city + "&query=" + keyWord)
                           .then(function(response2){
                             // Borrowed this from Tutorial 3
+                             $scope.title = "Fun Places You May Like";
                             for (var i = 0; i < response2.data.response.venues.length; i++) {
                             $scope.venueList[i] = {
                                 "name": response2.data.response.venues[i].name,
@@ -79,6 +81,9 @@ angular.module('starter.controllers', [])
                                 "location": response2.data.response.venues[i].location.address
                             };
                         }
+
+                       
+
                             // this did not work, hopefully I can fix it before the deadline
                           //  $http.get("https://api.foursquare.com/v2/venues/explore/&venuePhotos=1&client_id=EMPP4S253KDVUU5KJHWUCOEANVTQJP1O11SOKYMZW2TY2Y2A&client_secret=4ZDMZR2EVRZDAV13JBYLT4WNRPO4GBEDOFXTOZ0UZTH42AFA&v=20160215&VENUE_ID=" + response2.data.response.venues[0].id)
                          // .then(function(response3){
