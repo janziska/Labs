@@ -27,7 +27,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.util.List;
 
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class Home extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     public Geocoder geocoder;

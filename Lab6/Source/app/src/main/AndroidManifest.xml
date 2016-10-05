@@ -42,8 +42,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
+            android:name=".Home"
+            android:label="Home">
 
         </activity>
 

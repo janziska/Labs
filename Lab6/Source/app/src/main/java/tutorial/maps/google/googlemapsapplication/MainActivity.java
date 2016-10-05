@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     ImageButton button_photo;
     private static final String TAG = "MainActivity";
     public Geocoder geocoder;
-    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     Bitmap bitmap;
 
 
@@ -59,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
         button_map = (Button) findViewById(R.id.main_btn_maps);
         button_photo = (ImageButton) findViewById(R.id.main_btn_photo);
 
-
-
+        // Set default background
+        button_photo.setBackgroundResource(R.drawable.camera_crop);
 
         // Get position for address field
         geocoder = new Geocoder(this);
@@ -215,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Check for valid email
-        else if(email.isEmpty() || email.matches(emailPattern))
+        else if(email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches())
         {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
             builder.setTitle("Warning")
@@ -248,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
-            Intent redirect = new Intent(MainActivity.this, MapsActivity.class);
+            Intent redirect = new Intent(MainActivity.this, Home.class);
             redirect.putExtra("bmp", bitmap);
             startActivity(redirect);
         }
