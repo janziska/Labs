@@ -10,3 +10,5 @@ Lab 4 - https://github.com/janziska/Labs/wiki/Lab-4---Sentiment-App
 Lab 5 - https://github.com/janziska/Labs/wiki/Lab5-Wiki
 
 Lab 6 - https://github.com/janziska/Labs/wiki/Lab6---Register-Photo-Mapper
+
+Lab 7 - https://github.com/janziska/Labs/wiki/Lab-7---Fun-Stuff-to-Do-(part-2)
