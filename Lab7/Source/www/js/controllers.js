@@ -63,8 +63,8 @@ angular.module('starter.controllers', [])
   .getCurrentPosition(posOptions)
 	
    .then(function (position) {
-     // var lat  = position.coords.latitude;
-     // var long = position.coords.longitude;
+     var lat  = position.coords.latitude;
+      var long = position.coords.longitude;
       
       var geocoder = new google.maps.Geocoder();
       var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
@@ -84,8 +84,8 @@ angular.module('starter.controllers', [])
       console.log(err);
    });
 
-   //var watchOptions = {timeout : 3000, enableHighAccuracy: false};
-   //var watch = $cordovaGeolocation.watchPosition(watchOptions);
+   var watchOptions = {timeout : 3000, enableHighAccuracy: false};
+   var watch = $cordovaGeolocation.watchPosition(watchOptions);
 	
    watch.then(
       null,
