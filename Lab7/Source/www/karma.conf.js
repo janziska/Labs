@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'www/lib/angular/angular.js',
+      'www/lib/ionic/js/*.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'www/lib/ionic/js/ionic.js',
       'www/lib/ionic/js/ionic-angular.js',
@@ -32,6 +32,7 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
+      
     ],
 
 

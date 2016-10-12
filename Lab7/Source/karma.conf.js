@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Mon Oct 10 2016 10:19:57 GMT-0500 (Central Daylight Time)
+// Generated on Tue Oct 11 2016 17:14:51 GMT-0500 (Central Daylight Time)
 
 module.exports = function(config) {
   config.set({
@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'www/lib/angular/angular.js',
+       'www/lib/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'www/lib/ionic/js/ionic.js',
       'www/lib/ionic/js/ionic-angular.js',

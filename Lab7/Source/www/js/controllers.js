@@ -74,7 +74,10 @@ angular.module('starter.controllers', [])
       geocoder.geocode(request, function(data, status) {
         if (status == google.maps.GeocoderStatus.OK) {
           if (data[0] != null) {
-           $scope.city =  data[0].formatted_address;
+           var addr =  data[0].formatted_address;
+           var city = addr.substring(addr.indexOf(",")+1);
+           city = city.trim();
+           $scope.city = city;
           } else {
             alert("No address available");
           }
@@ -101,7 +104,7 @@ angular.module('starter.controllers', [])
          
       }
    );
-
+    
     watch.clearWatch();
 
 
