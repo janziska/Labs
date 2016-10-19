@@ -1,8 +1,8 @@
 describe('HomeCtrl', function() {
 	var scope;
-	console.log("hii");
+	
 	beforeEach(angular.mock.module('starter.controllers'));
-	console.log("hii1");
+	
 	beforeEach(angular.mock.inject(function($rootScope, $controller) {
 		scope = $rootScope.$new();
 		$controller('HomeCtrl', {$scope: scope});

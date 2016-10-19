@@ -11,7 +11,7 @@ describe('HomeCtrl', function() {
 	}));
 
 	it("Checks the auto address generation of lat and long", function () {
-		// Positions for GPS
+		// Look for a well formed city
 		var city = addr.substring(addr.indexOf(",")+1);
            city = city.trim();
 	
@@ -20,7 +20,7 @@ describe('HomeCtrl', function() {
 		var a = null;
 		expect(a).toBeNull();
 
-		// Look for lat long
+		// See if the city is there
 		expect(city).not.toBeNull();
 		
 	});

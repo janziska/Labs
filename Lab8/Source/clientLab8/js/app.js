@@ -56,7 +56,13 @@ function onSuccess(googleUser) {
 angular.module('myApp', [])
     .controller('View1Ctrl', function ($scope, $http) {
 
+        $scope.showBar = function(show){
 
+            if (show > 0)
+                return true;
+            else
+                return false;
+        }
 
         $scope.myFunction = function(){
 
@@ -66,48 +72,33 @@ angular.module('myApp', [])
             var targetLanguage = document.getElementById("to").value;
 
             // translate the text
-           $http.get("http://localhost:8080/MongoRestServiceExample/restService/user/?&source="
+           $http.get("http://localhost:8080/Lab8Server/lab8Service/?&source="
                + sourceLanguage + "&target=" + targetLanguage + "&q=" + sourceText)
                .then(function(response){
 
-                   // Store translation
-                   $scope.transText = "Translation: " + response.data.data.translations[0].translatedText;
-                  var transText =  "Translation: " + response.data.data.translations[0].translatedText;
-
-                   // Get sentiment
-                  $http.get("http://gateway-a.watsonplatform.net/calls/text/TextGetTextSentiment?" +
-                      "apikey=6374c076c0afdefeb93b382ecf5610fb71710307&outputMode=json&text=" + transText)
-                      .then(function(response2){
-                            console.log(transText);
-
-                          // Angular broke Google Sign Out so I had to stop using it
-                          $scope.score =  "Score: " + parseFloat(response2.data.docSentiment.score*100).toFixed(0);
-                          $scope.type =   "Type:  " +  response2.data.docSentiment.type;
+                   // Angular broke Google Sign Out so I had to stop using it
+                   $scope.score =  "Score: " + parseFloat(response.data.docSentiment.score*100).toFixed(0);
+                   $scope.type =   "Type:  " +  response.data.docSentiment.type;
+                   $scope.transText = "Translated Text: " + response.data.translatedText;
 
                           // Set width pasted on score
-                          var percent = parseFloat(response2.data.docSentiment.score*100).toFixed(0);
-                          var type = response2.data.docSentiment.type;
-
-                          // thanks to w3 School for the idea
-                          // Create meter
-                          if(type == "positive")
-                          {
-                              $scope.state = "progress-bar-success";
-                              $scope.myStyle = {width: percent + '%'};
-                          }
-                          else
-                          {
-                              $scope.state = "progress-bar progress-bar-danger";
-                              $scope.myStyle = {width: -1*percent + '%'};
-                          }
-
-
-
-                      });
-
+                   var percent = parseFloat(response.data.docSentiment.score*100).toFixed(0);
+                   $scope.percent = parseFloat(response.data.docSentiment.score*100).toFixed(0);
+                   var type = response.data.docSentiment.type;
+                   //var transText =   response.data.translatedText;
+                   // thanks to w3 School for the idea
+                   // Create meter
+                   if(type == "positive")
+                   {
+                       $scope.state = "progress-bar-success";
+                       $scope.myStyle = {width: percent + '%'};
+                   }
+                   else
+                   {
+                       $scope.state = "progress-bar progress-bar-danger";
+                       $scope.myStyle = {width: -1*percent + '%'};
+                   }
                });
 
-
-
-            }
+        }
     });
