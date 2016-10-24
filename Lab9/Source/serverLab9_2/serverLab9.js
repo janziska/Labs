@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, 'img')));
 // Test file, use as a backup for retreiving past info
 var filetest = require('fs').readFileSync('./img/test1.jpg').toString('base64');
 
+// Logging 
 var winston = require('winston');
 winston.emitErrs = true;
 
@@ -31,17 +32,14 @@ var logger = new (winston.Logger)({
     console.log('>>> ', log);
   });
   
- 
-
-
-
+// Get rid of CORS Error
 app.use(function(req, res, next) {
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         next();
     });
 
-// Translation of Image
+// Translation of Last Image Sent (for testing purposes)
 app.get('/getTran', function (req, res) {
     // Results  
     var result;
@@ -128,6 +126,7 @@ app.get('/getTran', function (req, res) {
 
 })
 
+// Post an image and get the translation
 app.post('/photo', function(req, res){
 
   // create an incoming form object
@@ -159,13 +158,13 @@ app.post('/photo', function(req, res){
     var resultSent;
     var resultType;
     
-    // Test read parameters
+    // Read the paramteres for languages
     var source = req.param('source');
     var target = req.param('target');
     console.log("Source = " + source);  
     console.log("Target = " + target);
     
-    // Body to send Image to Google Clour
+    // Body to send Image to Google Vision
     var body = {
       requests: {
         image: {
@@ -180,7 +179,7 @@ app.post('/photo', function(req, res){
       }
     }
     
-    // Google URL
+    // Google Vision URL
     var url = 'https://vision.googleapis.com/v1/images:annotate\?key\=AIzaSyC_7ckfqhJSox1Ay7MLwaxGAx6J-n7MQl0'
     
     // Request to Google
@@ -190,7 +189,7 @@ app.post('/photo', function(req, res){
       body: JSON.stringify(body)
     }, function (error, response, body)  {
 
-         //Check for error
+         // Check for error
         if(error){
             return console.log('Error:', error);
         }
@@ -205,14 +204,14 @@ app.post('/photo', function(req, res){
         var desc = JSON.parse(body).responses[0].textAnnotations[0].description;
        
         
-    // Translate URL
+    // Google Translate URL
     var url2 = "https://www.googleapis.com/language/translate/" 
 				+ "v2?key=AIzaSyCvMpcuLjolygMmSkHIIHIgnkq-10yIEXM" + "&source=" 
 				+ source + "&target=" + target + "&q=" + desc;
 
     console.log(url2);
         
-    // Request to Alchemy
+    // Request to Translate
     request2(
      url2, function (error, response, body)  {
          
@@ -224,12 +223,15 @@ app.post('/photo', function(req, res){
         // Log results 
         console.log(body);
          var translatedText = JSON.parse(body).data.translations[0].translatedText;
-        // Send user a response
+
+        // Build the user user a response in JSON format
          result = {'response' : {'originalText' : desc, 'translatedText' : translatedText}};
+         console.log(result);
          
+         // Send the response
         res.contentType('application/json');
         res.write(JSON.stringify(result));
-      console.log(result);
+       
         res.end();
     })
         
