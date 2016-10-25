@@ -14,23 +14,12 @@ var fs = require('fs');
 // Relative path to image foler
 app.use(express.static(path.join(__dirname, 'img')));
 
-// Test file, use as a backup for retreiving past info
+// Backup of image, allows user to retreive last message sent
 var filetest = require('fs').readFileSync('./img/test1.jpg').toString('base64');
 
-// Logging 
-var winston = require('winston');
-winston.emitErrs = true;
-
-var logger = new (winston.Logger)({
-    transports: [
-      new (winston.transports.Console)({ level: 'info' }),
-      new (winston.transports.File)({ filename: './logs/app.log' })
-    ]
-  });
-
-   logger.stream().on('log', function(log) {
-    console.log('>>> ', log);
-  });
+// Logging to a file
+var log = require('simple-node-logger').createSimpleLogger('./logs/lab9.log');
+log.info('log started');
   
 // Get rid of CORS Error
 app.use(function(req, res, next) {
@@ -49,8 +38,10 @@ app.get('/getTran', function (req, res) {
     // Test read parameters
     var source = req.param('source');
     var target = req.param('target');
-    logger.log('info',"Source = " + source);  
+    console.log('info',"Source = " + source);  
     console.log("Target = " + target);
+    log.info('info',"Source = " + source);  
+    log.info("Target = " + target);
     
     // Body to send Image to Google Clour
     var body = {
@@ -84,11 +75,13 @@ app.get('/getTran', function (req, res) {
 
         //Check for right status code
         if(response.statusCode !== 200){
+            log.info('Invalid Status Code Returned from Google Cloud:', response.statusCode)
             return console.log('Invalid Status Code Returned from Google Cloud:', response.statusCode);
         }
       
        // Get description
-        console.log(JSON.parse(body).responses[0].textAnnotations[0].description)
+        console.log(JSON.parse(body).responses[0].textAnnotations[0].description);
+        log.info(JSON.parse(body).responses[0].textAnnotations[0].description)
         var desc = JSON.parse(body).responses[0].textAnnotations[0].description;
        
         
@@ -110,9 +103,10 @@ app.get('/getTran', function (req, res) {
          
         // Log results 
         console.log(body);
-         var translatedText = JSON.parse(body).data.translations[0].translatedText;
+        log.info(body);
+        var translatedText = JSON.parse(body).data.translations[0].translatedText;
         // Send user a response
-         result = {'text' : desc, 'translatedText' : translatedText};
+        result = {'text' : desc, 'translatedText' : translatedText};
         res.contentType('application/json');
         res.write(JSON.stringify(result));
       
@@ -142,12 +136,14 @@ app.post('/photo', function(req, res){
   // rename it to it's orignal name
   form.on('file', function(field, file) {
     fs.rename(file.path, path.join(form.uploadDir, 'test1.jpg'));
-      console.log(file.name);
+    log.info(file.name);
+    console.log(file.name);
    
   });
 
   // log any errors that occur
   form.on('error', function(err) {
+    log.info('An error has occured: \n' + err);
     console.log('An error has occured: \n' + err);
   });
 
@@ -161,6 +157,9 @@ app.post('/photo', function(req, res){
     // Read the paramteres for languages
     var source = req.param('source');
     var target = req.param('target');
+    log.info("Source = " + source + '\n');  
+    log.info("Target = " + target + '\n');
+
     console.log("Source = " + source);  
     console.log("Target = " + target);
     
@@ -191,11 +190,13 @@ app.post('/photo', function(req, res){
 
          // Check for error
         if(error){
+            log.info('Error:', error);
             return console.log('Error:', error);
         }
 
         //Check for right status code
         if(response.statusCode !== 200){
+          log.info('Invalid Status Code Returned from Google Cloud:', response.statusCode);
             return console.log('Invalid Status Code Returned from Google Cloud:', response.statusCode);
         }
       
@@ -217,15 +218,18 @@ app.post('/photo', function(req, res){
          
         //Check for right status code
         if(response.statusCode !== 200){
+          log.info('Invalid Status Code Returned from Google Translate:', response.statusCode);
             return console.log('Invalid Status Code Returned from Google Translate:', response.statusCode);
         }
          
         // Log results 
+        log.info(body);
         console.log(body);
          var translatedText = JSON.parse(body).data.translations[0].translatedText;
 
         // Build the user user a response in JSON format
          result = {'response' : {'originalText' : desc, 'translatedText' : translatedText}};
+         log.info(result);
          console.log(result);
          
          // Send the response
