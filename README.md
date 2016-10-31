@@ -16,3 +16,5 @@ Lab 7 - https://github.com/janziska/Labs/wiki/Lab-7---Fun-Stuff-to-Do-(part-2)
 Lab 8 - https://github.com/janziska/Labs/wiki/Lab8---Emotional-Translate---Server-Mashup
 
 Lab 9 - https://github.com/janziska/Labs/wiki/Lab-9---Picture-Translate---Node-JS-Mashup
+
+Lab 10 - https://github.com/janziska/Labs/wiki/Lab-10---AWS-User-Service
