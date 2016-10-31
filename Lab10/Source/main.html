@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="demoMongo" ng-controller="MongoRestController">
+<head>
+    <title>Lab 10 - Main</title>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular-resource.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1><center>Lab 10 - AWS User Service</center></h1>
+    <h2><center>By Josh Neustrom (#39)</center></h2>
+    <h3><center>Hi {{fname}}, Here is Your Info</center></h3>
+</div>
+<p class="text-right"><a href="/index.html">Sign out</a></p>
+
+<div class="container">
+    <h1>
+        <div class="row">
+            <div class="col-sm-3" style="background-color:lavender;">Email</div>
+            <div class="col-sm-6" style="background-color:lavenderblush;">{{email}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color:lavender;">First Name: </div>
+            <div class="col-sm-6" style="background-color:lavenderblush;">{{fname}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color:lavender;">Last Name</div>
+            <div class="col-sm-6" style="background-color:lavenderblush;">{{lname}}</div>
+        </div>
+    </h1>
+</div>
+
+<script>
+    /**
+     * Created by user on 23/10/2016.
+     */
+    var myapp = angular.module('demoMongo',[]);
+    myapp.run(function ($http) {
+        // Sends this header with any AJAX request
+        $http.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+        // Send this header only in post requests. Specifies you are sending a JSON object
+        $http.defaults.headers.post['dataType'] = 'json'
+    });
+
+    myapp.controller('MongoRestController',function($scope,$http){
+
+        $scope.email = sessionStorage.getItem('user.email');
+        $scope.fname = sessionStorage.getItem('user.fname');
+        $scope.lname = sessionStorage.getItem('user.lname');
+
+    });
+
+
+</script>
+</body>
+</html>

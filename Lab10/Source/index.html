@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="demoMongo" ng-controller="MongoRestController">
+<head>
+    <title>Login</title>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular-resource.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <div class="jumbotron text-center">
+    <h1><center>Lab 10 - AWS User Service</center></h1>
+    <h2><center>By Josh Neustrom (#39)</center></h2>
+    <h3><center>Enter Your Info to Login</center></h3>
+  </div>
+  <div class="container">
+  <form class="form-horizontal" ng-submit="insertData()" name="contact_form">
+    <ul>
+
+        <div class="form-group">
+            <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" ng-model="formData.email" style="width:100%;" placeholder="example@mail.com" required />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+        <input type="password" id="password" name="password" ng-model="formData.password" style="width:100%;" placeholder="password">
+        </div>
+
+    </ul>
+    <input type="submit" name="Sign In" style="width:100%;" value="Sign In"/>
+  </form>
+      <br/>
+      <button onclick="location.href = 'register.html';" style="width:100%;" id="registerButton"  >Register</button>
+  </div>
+
+  <script>
+      /**
+       * Created by user on 23/10/2016.
+       */
+      var myapp = angular.module('demoMongo',[]);
+      myapp.run(function ($http) {
+          // Sends this header with any AJAX request
+          $http.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+          // Send this header only in post requests. Specifies you are sending a JSON object
+          $http.defaults.headers.post['dataType'] = 'json'
+      });
+
+                  myapp.controller('MongoRestController',function($scope,$http){
+                      $scope.insertData = function(){
+                              console.log($scope.formData.email);
+                              console.log($scope.formData.password);
+
+                              var dataParams = {
+                                  'email': $scope.email,
+                                  'pw': $scope.pw
+                              };
+                              var config = {
+                                  headers: {
+                                      'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                                  }
+                              }
+                              var req = $http.post('http://127.0.0.1:8081/login', $scope.formData);
+                              req.success(function (data, status, headers, config) {
+                                  sessionStorage.setItem("user.email",data.response.email);
+                                  sessionStorage.setItem("user.fname",data.response.fname);
+                                  sessionStorage.setItem("user.lname",data.response.lname);
+                                  alert("Login Successful, Welcome " + data.response.fname);
+                                  document.location.href="main.html";
+                  });
+              req.error(function(data, status, headers, config) {
+                  alert(JSON.stringify({data: data}));
+                  console.log( "failure message: " + JSON.stringify({data: data}));
+              });
+          };
+
+      });
+
+
+  </script>
+  </body>
+</html>

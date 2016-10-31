@@ -1,0 +1,16 @@
+{
+  "name": "Lab10-App",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.11",
+    "assert": "^1.4.1",
+    "cors": "^2.8.1"
+  },
+  "scripts": {
+    "start": "node app.js && node mongo.js"
+
+  }
+}
