@@ -63,44 +63,57 @@
     });
 
     myapp.controller('MongoRestController',function($scope,$http){
+        // Add a new record
         $scope.insertData = function(){
+            // Check passwords
             if ($scope.formData.password == $scope.formData.cpassword) {
-
-
-
+                // Log for troubleshooting
                 console.log($scope.formData.lname);
                 console.log($scope.formData.fname);
                 console.log($scope.formData.email);
                 console.log($scope.formData.password);
                 console.log($scope.formData.cpassword);
-
+                
+                // Data to send
                 var dataParams = {
-                    'fname': $scope.fname,
-                    'lname': $scope.lname,
-                    'email': $scope.email,
-                    'pw': $scope.pw
+                    'fname': $scope.formData.fname,
+                    'lname': $scope.formData.lname,
+                    'email': $scope.formData.email,
+                    'password': $scope.formData.password
                 };
+
+                // Type
                 var config = {
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
                     }
                 }
-                var req = $http.post('http://127.0.0.1:8081/register', $scope.formData);
+
+                // Crud insert requet
+                var req = $http.post('http://127.0.0.1:8081/register', dataParams);
                 req.success(function (data, status, headers, config) {
+                    // We are good
                     $scope.message = data;
                     console.log(data);
                     alert("Registration Successful");
+
+                    // Go to the Login page
                     document.location.href="index.html";
                 });
+
+                // Request failed
+                 req.error(function(data, status, headers, config) {
+                    alert(JSON.stringify({data: data}));
+                    console.log( "failure message: " + JSON.stringify({data: data}));
+                });
             }
+
+            // Password problem
             else
             {
                 alert("Error 1 - passwords do not match try again!");
             }
-            req.error(function(data, status, headers, config) {
-                alert(JSON.stringify({data: data}));
-                console.log( "failure message: " + JSON.stringify({data: data}));
-            });
+           
         };
 
     });

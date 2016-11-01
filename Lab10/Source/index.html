@@ -48,33 +48,42 @@
           $http.defaults.headers.post['dataType'] = 'json'
       });
 
-                  myapp.controller('MongoRestController',function($scope,$http){
-                      $scope.insertData = function(){
-                              console.log($scope.formData.email);
-                              console.log($scope.formData.password);
+            myapp.controller('MongoRestController',function($scope,$http){
+                // Login request
+                $scope.insertData = function(){
+                    // Log for debugging
+                    console.log($scope.formData.email);
+                    console.log($scope.formData.password);
+                    
+                    // Type
+                    var config = {
+                              headers: {
+                              'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                          }
+                      }
+                    
+                    // Query Mongo for user
+                    var req = $http.post('http://127.0.0.1:8081/login', $scope.formData);
+                        req.success(function (data, status, headers, config) {
+                            console.log(data.response);
 
-                              var dataParams = {
-                                  'email': $scope.email,
-                                  'pw': $scope.pw
-                              };
-                              var config = {
-                                  headers: {
-                                      'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
-                                  }
-                              }
-                              var req = $http.post('http://127.0.0.1:8081/login', $scope.formData);
-                              req.success(function (data, status, headers, config) {
-                                  sessionStorage.setItem("user.email",data.response.email);
-                                  sessionStorage.setItem("user.fname",data.response.fname);
-                                  sessionStorage.setItem("user.lname",data.response.lname);
-                                  alert("Login Successful, Welcome " + data.response.fname);
-                                  document.location.href="main.html";
-                  });
-              req.error(function(data, status, headers, config) {
-                  alert(JSON.stringify({data: data}));
-                  console.log( "failure message: " + JSON.stringify({data: data}));
-              });
-          };
+                            // Store user data from Mongo
+                            sessionStorage.setItem("user.email",data.response.email);
+                            sessionStorage.setItem("user.fname",data.response.fname);
+                            sessionStorage.setItem("user.lname",data.response.lname);
+                            sessionStorage.setItem("user.password",data.response.password);
+                            
+                            // Go to main page
+                            alert("Login Successful, Welcome " + data.response.fname);
+                            document.location.href="main.html";
+                        });
+                        
+                        // Error
+                        req.error(function(data, status, headers, config) {
+                                alert(JSON.stringify({data: data}));
+                                console.log( "failure message: " + JSON.stringify({data: data}));
+                            });
+                };
 
       });
 

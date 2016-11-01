@@ -32,6 +32,9 @@
             <div class="col-sm-6" style="background-color:lavenderblush;">{{lname}}</div>
         </div>
     </h1>
+    <button ng-click="deleteData();" style="width:100%;" id="deleteButton"  >Delete User</button>
+    <br/> <br/> 
+     <button onclick="location.href = 'update.html';" style="width:100%;" id="updateButton">Update User</button>
 </div>
 
 <script>
@@ -47,14 +50,43 @@
     });
 
     myapp.controller('MongoRestController',function($scope,$http){
-
+        // Get session info from login request to MongoDB to display
         $scope.email = sessionStorage.getItem('user.email');
         $scope.fname = sessionStorage.getItem('user.fname');
         $scope.lname = sessionStorage.getItem('user.lname');
+        
+        // Delete the user
+        $scope.deleteData = function(){
+                              console.log($scope.email);
+                              
+                              // Info to send
+                              var dataParams = {
+                                'email': $scope.email,
+                                'fname': $scope.fname,
+                                'lname': $scope.lname,
+                              };
+                              // Type
+                              var config = {
+                                  headers: {
+                                      'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                                  }
+                              }
 
-    });
+                              // Delete request to CRUD
+                              var req = $http.post('http://127.0.0.1:8081/delete', dataParams);
+                              req.success(function (data, status, headers, config) {
+                                  
+                                  alert("Delete Successful, Bye Bye " + $scope.fname);
+                                  document.location.href="index.html";
+                                });
+                                // Something went wrong
+                                req.error(function(data, status, headers, config) {
+                                    alert(JSON.stringify({data: data}));
+                                    console.log( "failure message 16: " + JSON.stringify({data: data}));
+                                });
+                }
 
-
+      });
 </script>
 </body>
 </html>

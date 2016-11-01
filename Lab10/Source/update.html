@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html ng-app="demoMongo" ng-controller="MongoRestController">
+<head>
+    <title>Register</title>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular-resource.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1><center>Lab 10 - AWS User Service</center></h1>
+    <h2><center>By Josh Neustrom (#39)</center></h2>
+    <h3><center>Update Your Info</center></h3>
+</div>
+<div class="container">
+    <form class="form-horizontal" ng-submit="updateData()" name="contact_form">
+        <ul>
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" style="width:100%;" placeholder="First Name" ng-model="fname" required />
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" style="width:100%;" ng-model="lname" placeholder="Last Name" required />
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" ng-model="email" style="width:100%;" placeholder="example@mail.com" required />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" ng-model="password" style="width:100%;" placeholder="password">
+            </div>
+
+            <div class="form-group">
+                <label for="cpassword">Confirm Password:</label>
+                <input type="password" id="cpassword" name="cpassword"  ng-model="cpassword" style="width:100%;" placeholder="confirm password">
+            </div>
+        </ul>
+        <input type="submit" name="Sign In" style="width:100%;" value="Update"/>
+    </form>
+    <br/>
+    <button onclick="location.href = 'main.html';" style="width:100%;" id="canButton"  >Cancel</button>
+</div>
+
+<script>
+    /**
+     * Created by user on 23/10/2016.
+     */
+    var myapp = angular.module('demoMongo',[]);
+    myapp.run(function ($http) {
+        // Sends this header with any AJAX request
+        $http.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+        // Send this header only in post requests. Specifies you are sending a JSON object
+        $http.defaults.headers.post['dataType'] = 'json'
+    });
+
+
+    myapp.controller('MongoRestController',function($scope,$http){
+
+        // Get info from session as backup copy when updating and to have old email as an index
+        $scope.email = sessionStorage.getItem('user.email');
+        $scope.fname = sessionStorage.getItem('user.fname');
+        $scope.lname = sessionStorage.getItem('user.lname');
+    
+        // Update the data
+        $scope.updateData = function(){
+            // Check passwords before sending
+            if ($scope.password == $scope.cpassword) {
+                // Record of what we have including old and new email  
+                console.log($scope.lname);
+                console.log($scope.fname);
+                console.log($scope.email);
+                console.log(sessionStorage.getItem('user.email'));
+                console.log($scope.password);
+                console.log($scope.cpassword);
+
+                // Data to send, old email is the index and assumed unique
+                var dataParams = {
+                    'fname': $scope.fname,
+                    'lname': $scope.lname,
+                    'oldemail': sessionStorage.getItem('user.email'),
+                    'newemail': $scope.email,
+                    'password': $scope.password,
+                    'cpassword': $scope.cpassword
+                };
+
+                // Headers
+                var config = {
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                    }
+                }
+
+                // Update to CRUD
+                var req = $http.post('http://127.0.0.1:8081/update', dataParams);
+                req.success(function (data, status, headers, config) {
+                    $scope.message = data;
+                    console.log(data);
+
+                    // Set the updated values in session storage
+                    sessionStorage.setItem("user.email",$scope.email);
+                    sessionStorage.setItem("user.fname",$scope.fname);
+                    sessionStorage.setItem("user.lname",$scope.lname);
+                    sessionStorage.setItem("user.password",$scope.password);
+                    alert("Update Successful");
+                    // Back to the main screen
+                    document.location.href="main.html";
+                });
+
+                // Error
+                 req.error(function(data, status, headers, config) {
+                        alert(JSON.stringify({data: data}));
+                    console.log( "Error 12 - failure message: " + JSON.stringify({data: data}));
+            });
+            }
+            // Password fail, no update
+            else
+            {
+
+                alert("Error 11 - passwords do not match try again!");
+            }
+           
+        };
+
+    });
+
+
+</script>
+</body>
+</html>
