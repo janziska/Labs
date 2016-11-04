@@ -39,3 +39,427 @@ GET YOUR CVS EXTRACARE CARD
 THANK YOU. SHOP 24 HOURS AT CVS. COM
 HS 00
  
+16:45:01.965 INFO  log started 
+16:47:39.209 INFO  IMG_20160305_162023_075.jpg 
+16:47:39.216 INFO  Source = en
+ 
+16:47:39.216 INFO  Target = de
+ 
+16:47:54.917 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "CVS / pharmacy 11124 HOLMES RD, KANSAS CITY. Mu APOTHEKE: 942-3262 STORE REG"
+   }
+  ]
+ }
+}
+ 
+16:47:54.918 INFO  {"response":{"originalText":"CVS/pharmacy\n11124 HOLMES RD, KANSAS CITY. Mu\nPHARMACY: 942-3262 STORE\nREG#02 TRN#4975 CSHR # 1385580 STR45635\nHelped by: BRIA\n1FA0 0 $50\nERH 50.00N\nTOTAL\n50.00\nIRETERCARD\n50、00\n*********** 2658\nCARD $50.00*****#9740 ACT LVAILu\n2505 6356 0264 9750 23\nRETURNS WITH RECEIPT THRU 03/26/2016\nActivated Prepaid cards are non refundable\nJANUARY 26 2016\n5:14 PM\nGET YOUR CVS EXTRACARE CARD\nTHANK YOU. SHOP 24 HOURS AT CVS. COM\nHS 00\n","translatedText":"CVS / pharmacy 11124 HOLMES RD, KANSAS CITY. Mu APOTHEKE: 942-3262 STORE REG"}} 
+16:48:41.073 INFO  IMG_20160612_104335_811.jpg 
+16:48:41.074 INFO  Source = en
+ 
+16:48:41.074 INFO  Target = de
+ 
+16:48:56.792 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "CVS / pharmacy 11124 HOLMES RD, KANSAS CITY. Mu APOTHEKE: 942-3262 STORE REG"
+   }
+  ]
+ }
+}
+ 
+16:48:56.793 INFO  {"response":{"originalText":"CVS/pharmacy\n11124 HOLMES RD, KANSAS CITY. Mu\nPHARMACY: 942-3262 STORE\nREG#02 TRN#4975 CSHR # 1385580 STR45635\nHelped by: BRIA\n1FA0 0 $50\nERH 50.00N\nTOTAL\n50.00\nIRETERCARD\n50、00\n*********** 2658\nCARD $50.00*****#9740 ACT LVAILu\n2505 6356 0264 9750 23\nRETURNS WITH RECEIPT THRU 03/26/2016\nActivated Prepaid cards are non refundable\nJANUARY 26 2016\n5:14 PM\nGET YOUR CVS EXTRACARE CARD\nTHANK YOU. SHOP 24 HOURS AT CVS. COM\nHS 00\n","translatedText":"CVS / pharmacy 11124 HOLMES RD, KANSAS CITY. Mu APOTHEKE: 942-3262 STORE REG"}} 
+16:49:08.272 INFO  IMG_20160205_121526_034.jpg 
+16:49:08.274 INFO  Source = en
+ 
+16:49:08.274 INFO  Target = de
+ 
+16:49:23.312 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "CVS / pharmacy 11124 HOLMES RD, KANSAS CITY. Mu APOTHEKE: 942-3262 STORE REG"
+   }
+  ]
+ }
+}
+ 
+16:49:23.312 INFO  {"response":{"originalText":"CVS/pharmacy\n11124 HOLMES RD, KANSAS CITY. Mu\nPHARMACY: 942-3262 STORE\nREG#02 TRN#4975 CSHR # 1385580 STR45635\nHelped by: BRIA\n1FA0 0 $50\nERH 50.00N\nTOTAL\n50.00\nIRETERCARD\n50、00\n*********** 2658\nCARD $50.00*****#9740 ACT LVAILu\n2505 6356 0264 9750 23\nRETURNS WITH RECEIPT THRU 03/26/2016\nActivated Prepaid cards are non refundable\nJANUARY 26 2016\n5:14 PM\nGET YOUR CVS EXTRACARE CARD\nTHANK YOU. SHOP 24 HOURS AT CVS. COM\nHS 00\n","translatedText":"CVS / pharmacy 11124 HOLMES RD, KANSAS CITY. Mu APOTHEKE: 942-3262 STORE REG"}} 
+16:49:44.073 INFO  IMG_20160118_173912_583.jpg 
+16:49:44.075 INFO  Source = en
+ 
+16:49:44.075 INFO  Target = de
+ 
+16:50:03.842 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "CVS / pharmacy 11124 HOLMES RD, KANSAS CITY. Mu APOTHEKE: 942-3262 STORE REG"
+   }
+  ]
+ }
+}
+ 
+16:50:03.844 INFO  {"response":{"originalText":"CVS/pharmacy\n11124 HOLMES RD, KANSAS CITY. Mu\nPHARMACY: 942-3262 STORE\nREG#02 TRN#4975 CSHR # 1385580 STR45635\nHelped by: BRIA\n1FA0 0 $50\nERH 50.00N\nTOTAL\n50.00\nIRETERCARD\n50、00\n*********** 2658\nCARD $50.00*****#9740 ACT LVAILu\n2505 6356 0264 9750 23\nRETURNS WITH RECEIPT THRU 03/26/2016\nActivated Prepaid cards are non refundable\nJANUARY 26 2016\n5:14 PM\nGET YOUR CVS EXTRACARE CARD\nTHANK YOU. SHOP 24 HOURS AT CVS. COM\nHS 00\n","translatedText":"CVS / pharmacy 11124 HOLMES RD, KANSAS CITY. Mu APOTHEKE: 942-3262 STORE REG"}} 
+16:50:23.295 INFO  Capture (2).PNG 
+16:50:23.298 INFO  Source = en
+ 
+16:50:23.298 INFO  Target = de
+ 
+16:50:38.847 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "CVS / pharmacy 11124 HOLMES RD, KANSAS CITY. Mu APOTHEKE: 942-3262 STORE REG"
+   }
+  ]
+ }
+}
+ 
+16:50:38.848 INFO  {"response":{"originalText":"CVS/pharmacy\n11124 HOLMES RD, KANSAS CITY. Mu\nPHARMACY: 942-3262 STORE\nREG#02 TRN#4975 CSHR # 1385580 STR45635\nHelped by: BRIA\n1FA0 0 $50\nERH 50.00N\nTOTAL\n50.00\nIRETERCARD\n50、00\n*********** 2658\nCARD $50.00*****#9740 ACT LVAILu\n2505 6356 0264 9750 23\nRETURNS WITH RECEIPT THRU 03/26/2016\nActivated Prepaid cards are non refundable\nJANUARY 26 2016\n5:14 PM\nGET YOUR CVS EXTRACARE CARD\nTHANK YOU. SHOP 24 HOURS AT CVS. COM\nHS 00\n","translatedText":"CVS / pharmacy 11124 HOLMES RD, KANSAS CITY. Mu APOTHEKE: 942-3262 STORE REG"}} 
+16:52:45.736 INFO  log started 
+16:54:28.122 INFO  log started 
+16:56:36.184 INFO  log started 
+16:56:38.452 INFO  Capture (2).PNG 
+16:56:38.465 INFO  Source = en
+ 
+16:56:38.465 INFO  Target = de
+ 
+16:56:41.280 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "EXCHANGE Whiteman Military Clothing Store 660) 563-3359 900-1700 Mo-Fr 1000-1600 Sa. Geschlossen Sonntag und Feiertage Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITÄR SAS PLYPR HDCVR BRIN PTH506 6.95 01442129304 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 $ 32,13 TOTAL 32,13 $ MASTER XXXXXXXXXXXX 7949 ABLAUF XX / XX SNI PED BANK AUTH 01268 SEQ"
+   }
+  ]
+ }
+}
+ 
+16:56:41.281 INFO  {"response":{"originalText":"EXCHANGE\nWhiteman Military Clothing Store\n660) 563-3359\n900-1700 Mon-Fri 1000-1600 Sat\nClosed Sunday and Holidays\nStore Manager\nTrish Dillon\nDLATS\nAF PT TRUNKS L 71802009273\n16.18\nMILITARY\nSAS PLYPR\nHDCVR BRIN PTH506\n6.95\n01442129304\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\n$32.13\nTOTAL\n$32.13\nMASTERCARD\nXXXXXXXXXXXX 7949\nEXPIRY\nXX/XX SNI PED BANK\nAUTH 01268\nSEQ# 5792\n","translatedText":"EXCHANGE Whiteman Military Clothing Store 660) 563-3359 900-1700 Mo-Fr 1000-1600 Sa. Geschlossen Sonntag und Feiertage Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITÄR SAS PLYPR HDCVR BRIN PTH506 6.95 01442129304 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 $ 32,13 TOTAL 32,13 $ MASTER XXXXXXXXXXXX 7949 ABLAUF XX / XX SNI PED BANK AUTH 01268 SEQ"}} 
+16:57:23.799 INFO  IMG_20160118_173912_583.jpg 
+16:57:23.801 INFO  Source = en
+ 
+16:57:23.801 INFO  Target = de
+ 
+16:57:25.345 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "EXCHANGE Whiteman Military Clothing Store 660) 563-3359 900-1700 Mo-Fr 1000-1600 Sa. Geschlossen Sonntag und Feiertage Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITÄR SAS PLYPR HDCVR BRIN PTH506 6.95 01442129304 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 $ 32,13 TOTAL 32,13 $ MASTER XXXXXXXXXXXX 7949 ABLAUF XX / XX SNI PED BANK AUTH 01268 SEQ"
+   }
+  ]
+ }
+}
+ 
+16:57:25.346 INFO  {"response":{"originalText":"EXCHANGE\nWhiteman Military Clothing Store\n660) 563-3359\n900-1700 Mon-Fri 1000-1600 Sat\nClosed Sunday and Holidays\nStore Manager\nTrish Dillon\nDLATS\nAF PT TRUNKS L 71802009273\n16.18\nMILITARY\nSAS PLYPR\nHDCVR BRIN PTH506\n6.95\n01442129304\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\n$32.13\nTOTAL\n$32.13\nMASTERCARD\nXXXXXXXXXXXX 7949\nEXPIRY\nXX/XX SNI PED BANK\nAUTH 01268\nSEQ# 5792\n","translatedText":"EXCHANGE Whiteman Military Clothing Store 660) 563-3359 900-1700 Mo-Fr 1000-1600 Sa. Geschlossen Sonntag und Feiertage Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITÄR SAS PLYPR HDCVR BRIN PTH506 6.95 01442129304 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 $ 32,13 TOTAL 32,13 $ MASTER XXXXXXXXXXXX 7949 ABLAUF XX / XX SNI PED BANK AUTH 01268 SEQ"}} 
+16:57:44.022 INFO  IMG_20160118_173912_583.jpg 
+16:57:44.023 INFO  Source = en
+ 
+16:57:44.023 INFO  Target = de
+ 
+16:57:46.690 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "EXCHANGE Whiteman Military Clothing Store 660) 563-3359 900-1700 Mo-Fr 1000-1600 Sa. Geschlossen Sonntag und Feiertage Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITÄR SAS PLYPR HDCVR BRIN PTH506 6.95 01442129304 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 $ 32,13 TOTAL 32,13 $ MASTER XXXXXXXXXXXX 7949 ABLAUF XX / XX SNI PED BANK AUTH 01268 SEQ"
+   }
+  ]
+ }
+}
+ 
+16:57:46.691 INFO  {"response":{"originalText":"EXCHANGE\nWhiteman Military Clothing Store\n660) 563-3359\n900-1700 Mon-Fri 1000-1600 Sat\nClosed Sunday and Holidays\nStore Manager\nTrish Dillon\nDLATS\nAF PT TRUNKS L 71802009273\n16.18\nMILITARY\nSAS PLYPR\nHDCVR BRIN PTH506\n6.95\n01442129304\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\n$32.13\nTOTAL\n$32.13\nMASTERCARD\nXXXXXXXXXXXX 7949\nEXPIRY\nXX/XX SNI PED BANK\nAUTH 01268\nSEQ# 5792\n","translatedText":"EXCHANGE Whiteman Military Clothing Store 660) 563-3359 900-1700 Mo-Fr 1000-1600 Sa. Geschlossen Sonntag und Feiertage Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITÄR SAS PLYPR HDCVR BRIN PTH506 6.95 01442129304 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 NTCH CAP ACRYL BLCK C90203 4.50 01442102895 $ 32,13 TOTAL 32,13 $ MASTER XXXXXXXXXXXX 7949 ABLAUF XX / XX SNI PED BANK AUTH 01268 SEQ"}} 
+16:58:38.283 INFO  IMG_20160118_173951_517.jpg 
+16:58:38.284 INFO  Source = en
+ 
+16:58:38.284 INFO  Target = fr
+ 
+16:58:40.010 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "Militaire ECHANGE Whiteman Magasin de vêtements 660) 563-3359 900-1700 lun-ven 1000-1600 Sam Fermé dimanche et jours fériés Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITAIRE SAS PLYPR HDCVR BRIN PTH506 6,95 01442129304 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 $ 32,13 $ 32,13 TOTAL MASTERCARD XXXXXXXXXXXX 7949 EXPIRATION XX / XX SNI PED BANK AUTH 01268 SEQ"
+   }
+  ]
+ }
+}
+ 
+16:58:40.012 INFO  {"response":{"originalText":"EXCHANGE\nWhiteman Military Clothing Store\n660) 563-3359\n900-1700 Mon-Fri 1000-1600 Sat\nClosed Sunday and Holidays\nStore Manager\nTrish Dillon\nDLATS\nAF PT TRUNKS L 71802009273\n16.18\nMILITARY\nSAS PLYPR\nHDCVR BRIN PTH506\n6.95\n01442129304\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\n$32.13\nTOTAL\n$32.13\nMASTERCARD\nXXXXXXXXXXXX 7949\nEXPIRY\nXX/XX SNI PED BANK\nAUTH 01268\nSEQ# 5792\n","translatedText":"Militaire ECHANGE Whiteman Magasin de vêtements 660) 563-3359 900-1700 lun-ven 1000-1600 Sam Fermé dimanche et jours fériés Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITAIRE SAS PLYPR HDCVR BRIN PTH506 6,95 01442129304 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 $ 32,13 $ 32,13 TOTAL MASTERCARD XXXXXXXXXXXX 7949 EXPIRATION XX / XX SNI PED BANK AUTH 01268 SEQ"}} 
+16:58:55.960 INFO  log started 
+16:58:58.687 INFO  IMG_20160118_173951_517.jpg 
+16:58:58.695 INFO  Source = en
+ 
+16:58:58.695 INFO  Target = fr
+ 
+16:59:12.883 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "Cargo Largo Prix Prix 2,10 2,0 4,8 4,39 6,98 LBS 2.00 2.00 00 2.00 00 50 0.00 1.50 60.42 14.70"
+   }
+  ]
+ }
+}
+ 
+16:59:12.885 INFO  {"response":{"originalText":"Cargo Largo\nPrice Price\n2.10\n2.0 4.8\n4.39\n6.98 LBS\n2.00 00 2.00\n00 2.00\n50 0.00 1.50\n60.42\n14.70\n","translatedText":"Cargo Largo Prix Prix 2,10 2,0 4,8 4,39 6,98 LBS 2.00 2.00 00 2.00 00 50 0.00 1.50 60.42 14.70"}} 
+17:00:06.786 INFO  log started 
+17:00:27.133 INFO  IMG_20160305_162023_075.jpg 
+17:00:27.139 INFO  Source = en
+ 
+17:00:27.139 INFO  Target = fr
+ 
+17:00:40.265 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "Cargo Largo Prix Prix 2,10 2,0 4,8 4,39 6,98 LBS 2.00 2.00 00 2.00 00 50 0.00 1.50 60.42 14.70"
+   }
+  ]
+ }
+}
+ 
+17:00:40.267 INFO  {"response":{"originalText":"Cargo Largo\nPrice Price\n2.10\n2.0 4.8\n4.39\n6.98 LBS\n2.00 00 2.00\n00 2.00\n50 0.00 1.50\n60.42\n14.70\n","translatedText":"Cargo Largo Prix Prix 2,10 2,0 4,8 4,39 6,98 LBS 2.00 2.00 00 2.00 00 50 0.00 1.50 60.42 14.70"}} 
+17:01:06.609 INFO  log started 
+17:01:08.203 INFO  IMG_20160305_162023_075.jpg 
+17:01:08.210 INFO  Source = en
+ 
+17:01:08.210 INFO  Target = fr
+ 
+17:01:23.388 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "bienvenue à Chick-fil Jefferson City FSU Jefferson City, MO opérateur: Ton Van Voorn COPIE CLIENT 05/03/2016 16:15:49 de DINE IN Numéro de commande: 854282 1 Nktsid GRL Appl Vin 1,45 1 Fries SM (4,93) 1 MILITAIRE 1,35 Dr Ppr SN 4,92 $ Sub, total: 5,30 $ 0,38 $ total Tax: (4,93 $) Discount total: 0,00 $ Changer 5,30 $ Dollar exact Tran Seq No: 854282 Registre: Caissier Tommie Ce fut un plaisir de vous servir! Bonne journée."
+   }
+  ]
+ }
+}
+ 
+17:01:23.390 INFO  {"response":{"originalText":"welcome to Chick-fil\nJefferson City FSU\nJefferson City, MO\nOperator: Ton Van Voorn\nCUSTOMER COPY\n3/5/2016 4:15:49 PM\nDINE IN\nOrder Number: 854282\n1 Nktsid GRL\nAppl Vin\n1.45\n1 Fries SM\n(4.93)\n1 MILITARY\n1.35\nDr Ppr SN\n$4.92\nSub, Total:\n$0.38\nTax\n$5.30\nTotal:\n($4.93)\nDiscount Total:\n$0.00\nChange\n$5.30\nExact Dollar\nTran Seq No: 854282\nRegister:\nCashier Tommie\nIt was a pleasure serving you!\nHave a wonderful day.\n","translatedText":"bienvenue à Chick-fil Jefferson City FSU Jefferson City, MO opérateur: Ton Van Voorn COPIE CLIENT 05/03/2016 16:15:49 de DINE IN Numéro de commande: 854282 1 Nktsid GRL Appl Vin 1,45 1 Fries SM (4,93) 1 MILITAIRE 1,35 Dr Ppr SN 4,92 $ Sub, total: 5,30 $ 0,38 $ total Tax: (4,93 $) Discount total: 0,00 $ Changer 5,30 $ Dollar exact Tran Seq No: 854282 Registre: Caissier Tommie Ce fut un plaisir de vous servir! Bonne journée."}} 
+17:01:54.564 INFO  IMG_20160222_075857_527.jpg 
+17:01:54.565 INFO  Source = en
+ 
+17:01:54.565 INFO  Target = fr
+ 
+17:02:09.138 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "bienvenue à Chick-fil Jefferson City FSU Jefferson City, MO opérateur: Ton Van Voorn COPIE CLIENT 05/03/2016 16:15:49 de DINE IN Numéro de commande: 854282 1 Nktsid GRL Appl Vin 1,45 1 Fries SM (4,93) 1 MILITAIRE 1,35 Dr Ppr SN 4,92 $ Sub, total: 5,30 $ 0,38 $ total Tax: (4,93 $) Discount total: 0,00 $ Changer 5,30 $ Dollar exact Tran Seq No: 854282 Registre: Caissier Tommie Ce fut un plaisir de vous servir! Bonne journée."
+   }
+  ]
+ }
+}
+ 
+17:02:09.141 INFO  {"response":{"originalText":"welcome to Chick-fil\nJefferson City FSU\nJefferson City, MO\nOperator: Ton Van Voorn\nCUSTOMER COPY\n3/5/2016 4:15:49 PM\nDINE IN\nOrder Number: 854282\n1 Nktsid GRL\nAppl Vin\n1.45\n1 Fries SM\n(4.93)\n1 MILITARY\n1.35\nDr Ppr SN\n$4.92\nSub, Total:\n$0.38\nTax\n$5.30\nTotal:\n($4.93)\nDiscount Total:\n$0.00\nChange\n$5.30\nExact Dollar\nTran Seq No: 854282\nRegister:\nCashier Tommie\nIt was a pleasure serving you!\nHave a wonderful day.\n","translatedText":"bienvenue à Chick-fil Jefferson City FSU Jefferson City, MO opérateur: Ton Van Voorn COPIE CLIENT 05/03/2016 16:15:49 de DINE IN Numéro de commande: 854282 1 Nktsid GRL Appl Vin 1,45 1 Fries SM (4,93) 1 MILITAIRE 1,35 Dr Ppr SN 4,92 $ Sub, total: 5,30 $ 0,38 $ total Tax: (4,93 $) Discount total: 0,00 $ Changer 5,30 $ Dollar exact Tran Seq No: 854282 Registre: Caissier Tommie Ce fut un plaisir de vous servir! Bonne journée."}} 
+17:03:36.144 INFO  log started 
+17:03:40.457 INFO  IMG_20160222_075857_527.jpg 
+17:03:40.466 INFO  Source = en
+ 
+17:03:40.466 INFO  Target = fr
+ 
+17:03:58.691 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "bienvenue à Quik tr TP Quik Trip"
+   }
+  ]
+ }
+}
+ 
+17:03:58.692 INFO  {"response":{"originalText":"welcome to Quik tr T P\nQuik Trip #00216\n4024 S. Noland\nIndependence, MO\n(816)254-7355\n02-19-2016\n1:41:45 PM\nRegister #0002\n$1.49\nCntry Sausg Link\n$1.09\nS Frzn\n$3.00\nA2 Pepsi 20oz\nDr Pepper 20oz Bt1\nAmount: $1.50\nDr Pepper 200 Bt1\nAmount: $1.50\nCorp Roller Grill (Mac&Cheese Taquito) $0\n99$.99\nMac N Chz Taqito\nAmount: $0.99\n$6.57\nSub-Total\n43\nTax\nTota 1\nWe Thank You\nPlease Come Again\n","translatedText":"bienvenue à Quik tr TP Quik Trip"}} 
+17:04:21.314 INFO  IMG_20160520_090937_559.jpg 
+17:04:21.317 INFO  Source = en
+ 
+17:04:21.317 INFO  Target = fr
+ 
+17:04:37.644 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "bienvenue à Quik tr TP Quik Trip"
+   }
+  ]
+ }
+}
+ 
+17:04:37.645 INFO  {"response":{"originalText":"welcome to Quik tr T P\nQuik Trip #00216\n4024 S. Noland\nIndependence, MO\n(816)254-7355\n02-19-2016\n1:41:45 PM\nRegister #0002\n$1.49\nCntry Sausg Link\n$1.09\nS Frzn\n$3.00\nA2 Pepsi 20oz\nDr Pepper 20oz Bt1\nAmount: $1.50\nDr Pepper 200 Bt1\nAmount: $1.50\nCorp Roller Grill (Mac&Cheese Taquito) $0\n99$.99\nMac N Chz Taqito\nAmount: $0.99\n$6.57\nSub-Total\n43\nTax\nTota 1\nWe Thank You\nPlease Come Again\n","translatedText":"bienvenue à Quik tr TP Quik Trip"}} 
+17:04:46.592 INFO  log started 
+17:04:53.643 INFO  IMG_20160520_090937_559.jpg 
+17:04:53.654 INFO  Source = en
+ 
+17:04:53.654 INFO  Target = fr
+ 
+17:04:57.440 INFO  IMG_20160520_090937_559.jpg 
+17:04:57.440 INFO  Source = en
+ 
+17:04:57.440 INFO  Target = fr
+ 
+17:05:23.042 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "NASHVILLE, TN 37214 INFORMATIONS VEHICULE ÉCONOMIE 24 PORTE AUTOMATIQUE AVC ÉCONOMIE 24 PORTE AUTOMATIQUE AMC intérieure Nom Alamo eter et RA 437522014 09h08 C Renta 19-MAI-2016 ARG retour 20 MAI-2016 08:42 INTL SONT pas LA L Di Josha NEUSTROM UR niveau 284909 de véhicules ci-dessous. Si État Modèle classe VELOSTER ECAR chargée lass CAR Driven / Province 4A0109 7/8 (C Licence 182 MIKms Drivon MIKm Out 899 MIKms En 108 Charges Aucun Un Prix Montant 3 Gals 3,04 9, 13 * Heure AM PM 1 Jours 13.25 13.25 * TS C 0,00 Unlim MIKM 0 M / Kims 1,50 Tray BUSINESS TAX 0,09 * NC 2,40 * notre CONCESSION Handheld FEE RECOVERY CENTER TAXE 0,31 0,93 contre ntal 2.01 LOCATION 08.000 X 12 appuyez sur Entrée USD ND total des frais oCUMENT Deposit VIsa 0450 USD 34,12 Montant taxablo à échéance Sous réserve de la vérification Frequent Flyer ****** 4193 crédit SUD EST AIRLINES RAPID REMARDS Serv client Numéro this Form 1.000-445-5664 2015 Alamo Rent A Car 2601 6 / 15"
+   }
+  ]
+ }
+}
+ 
+17:05:23.044 INFO  {"response":{"originalText":"NASHVILLE, TN 37214\nVEHICLE INFORMATION\nECONOMY 24 DOOR AUTOMATIC AVC\nECONOMY 24 DOOR AUTOMATIC AMC\ninner Name\nAlamo\neter and\nRA 437522014\n09:08 AM\nC Renta\n19-MAY-2016 ARG\nReturn\n20-MAY-2016 08:42 AM\nINTL ARE\nno\nTHE\nL\nDi JosHA NEUSTROM\nUR\n284909\nVehicle\nlevel below.\nIf Model VELOSTER\nclass charged ECAR\nlass Driven\nCAR\nState/Province\n4A0109\n7/8\n(C\nLicense\n182\nMIKms Drivon MIKm Out 899\nMIKms In 108\nCharges No Un\nPrice Amount\n3 Gals\n3,04\n9, 13*\nTime\nAM PM\n1 Days 13.25\n13.25*\nTS C\n0,00\nUNLIM MIKM 0 M/Kims\n1,50\nTray\nBUSINESS TAX\n0,09*\nNC\n2,40*\nour Handheld\nCONCESSION FEE RECOVERY\nCENTER TAX\n0,31\n0,93\nntal counter\n2.01\nRENTAL 08,000 X\n12 press Return\nUSD ND\nTotal Charges\nocument in\nDeposit VIsa 0450\nUSD 34.12\nAmount Due\ntaxablo Items\nSubject to Audit\nFrequent Flyer ******4193 Credit to\nSOUTH EST AIRLINES RAPID REMARDS\nCustomer Serv ce Number 1.000-445-5664\n2015 Alamo Rent A Car\nForm 2601 6/15\n","translatedText":"NASHVILLE, TN 37214 INFORMATIONS VEHICULE ÉCONOMIE 24 PORTE AUTOMATIQUE AVC ÉCONOMIE 24 PORTE AUTOMATIQUE AMC intérieure Nom Alamo eter et RA 437522014 09h08 C Renta 19-MAI-2016 ARG retour 20 MAI-2016 08:42 INTL SONT pas LA L Di Josha NEUSTROM UR niveau 284909 de véhicules ci-dessous. Si État Modèle classe VELOSTER ECAR chargée lass CAR Driven / Province 4A0109 7/8 (C Licence 182 MIKms Drivon MIKm Out 899 MIKms En 108 Charges Aucun Un Prix Montant 3 Gals 3,04 9, 13 * Heure AM PM 1 Jours 13.25 13.25 * TS C 0,00 Unlim MIKM 0 M / Kims 1,50 Tray BUSINESS TAX 0,09 * NC 2,40 * notre CONCESSION Handheld FEE RECOVERY CENTER TAXE 0,31 0,93 contre ntal 2.01 LOCATION 08.000 X 12 appuyez sur Entrée USD ND total des frais oCUMENT Deposit VIsa 0450 USD 34,12 Montant taxablo à échéance Sous réserve de la vérification Frequent Flyer ****** 4193 crédit SUD EST AIRLINES RAPID REMARDS Serv client Numéro this Form 1.000-445-5664 2015 Alamo Rent A Car 2601 6 / 15"}} 
+17:05:24.143 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "NASHVILLE, TN 37214 INFORMATIONS VEHICULE ÉCONOMIE 24 PORTE AUTOMATIQUE AVC ÉCONOMIE 24 PORTE AUTOMATIQUE AMC intérieure Nom Alamo eter et RA 437522014 09h08 C Renta 19-MAI-2016 ARG retour 20 MAI-2016 08:42 INTL SONT pas LA L Di Josha NEUSTROM UR niveau 284909 de véhicules ci-dessous. Si État Modèle classe VELOSTER ECAR chargée lass CAR Driven / Province 4A0109 7/8 (C Licence 182 MIKms Drivon MIKm Out 899 MIKms En 108 Charges Aucun Un Prix Montant 3 Gals 3,04 9, 13 * Heure AM PM 1 Jours 13.25 13.25 * TS C 0,00 Unlim MIKM 0 M / Kims 1,50 Tray BUSINESS TAX 0,09 * NC 2,40 * notre CONCESSION Handheld FEE RECOVERY CENTER TAXE 0,31 0,93 contre ntal 2.01 LOCATION 08.000 X 12 appuyez sur Entrée USD ND total des frais oCUMENT Deposit VIsa 0450 USD 34,12 Montant taxablo à échéance Sous réserve de la vérification Frequent Flyer ****** 4193 crédit SUD EST AIRLINES RAPID REMARDS Serv client Numéro this Form 1.000-445-5664 2015 Alamo Rent A Car 2601 6 / 15"
+   }
+  ]
+ }
+}
+ 
+17:05:24.145 INFO  {"response":{"originalText":"NASHVILLE, TN 37214\nVEHICLE INFORMATION\nECONOMY 24 DOOR AUTOMATIC AVC\nECONOMY 24 DOOR AUTOMATIC AMC\ninner Name\nAlamo\neter and\nRA 437522014\n09:08 AM\nC Renta\n19-MAY-2016 ARG\nReturn\n20-MAY-2016 08:42 AM\nINTL ARE\nno\nTHE\nL\nDi JosHA NEUSTROM\nUR\n284909\nVehicle\nlevel below.\nIf Model VELOSTER\nclass charged ECAR\nlass Driven\nCAR\nState/Province\n4A0109\n7/8\n(C\nLicense\n182\nMIKms Drivon MIKm Out 899\nMIKms In 108\nCharges No Un\nPrice Amount\n3 Gals\n3,04\n9, 13*\nTime\nAM PM\n1 Days 13.25\n13.25*\nTS C\n0,00\nUNLIM MIKM 0 M/Kims\n1,50\nTray\nBUSINESS TAX\n0,09*\nNC\n2,40*\nour Handheld\nCONCESSION FEE RECOVERY\nCENTER TAX\n0,31\n0,93\nntal counter\n2.01\nRENTAL 08,000 X\n12 press Return\nUSD ND\nTotal Charges\nocument in\nDeposit VIsa 0450\nUSD 34.12\nAmount Due\ntaxablo Items\nSubject to Audit\nFrequent Flyer ******4193 Credit to\nSOUTH EST AIRLINES RAPID REMARDS\nCustomer Serv ce Number 1.000-445-5664\n2015 Alamo Rent A Car\nForm 2601 6/15\n","translatedText":"NASHVILLE, TN 37214 INFORMATIONS VEHICULE ÉCONOMIE 24 PORTE AUTOMATIQUE AVC ÉCONOMIE 24 PORTE AUTOMATIQUE AMC intérieure Nom Alamo eter et RA 437522014 09h08 C Renta 19-MAI-2016 ARG retour 20 MAI-2016 08:42 INTL SONT pas LA L Di Josha NEUSTROM UR niveau 284909 de véhicules ci-dessous. Si État Modèle classe VELOSTER ECAR chargée lass CAR Driven / Province 4A0109 7/8 (C Licence 182 MIKms Drivon MIKm Out 899 MIKms En 108 Charges Aucun Un Prix Montant 3 Gals 3,04 9, 13 * Heure AM PM 1 Jours 13.25 13.25 * TS C 0,00 Unlim MIKM 0 M / Kims 1,50 Tray BUSINESS TAX 0,09 * NC 2,40 * notre CONCESSION Handheld FEE RECOVERY CENTER TAXE 0,31 0,93 contre ntal 2.01 LOCATION 08.000 X 12 appuyez sur Entrée USD ND total des frais oCUMENT Deposit VIsa 0450 USD 34,12 Montant taxablo à échéance Sous réserve de la vérification Frequent Flyer ****** 4193 crédit SUD EST AIRLINES RAPID REMARDS Serv client Numéro this Form 1.000-445-5664 2015 Alamo Rent A Car 2601 6 / 15"}} 
+17:05:46.498 INFO  log started 
+17:06:09.328 INFO  IMG_20160118_173912_583.jpg 
+17:06:09.339 INFO  Source = en
+ 
+17:06:09.339 INFO  Target = fr
+ 
+17:06:25.602 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "NASHVILLE, TN 37214 INFORMATIONS VEHICULE ÉCONOMIE 24 PORTE AUTOMATIQUE AVC ÉCONOMIE 24 PORTE AUTOMATIQUE AMC intérieure Nom Alamo eter et RA 437522014 09h08 C Renta 19-MAI-2016 ARG retour 20 MAI-2016 08:42 INTL SONT pas LA L Di Josha NEUSTROM UR niveau 284909 de véhicules ci-dessous. Si État Modèle classe VELOSTER ECAR chargée lass CAR Driven / Province 4A0109 7/8 (C Licence 182 MIKms Drivon MIKm Out 899 MIKms En 108 Charges Aucun Un Prix Montant 3 Gals 3,04 9, 13 * Heure AM PM 1 Jours 13.25 13.25 * TS C 0,00 Unlim MIKM 0 M / Kims 1,50 Tray BUSINESS TAX 0,09 * NC 2,40 * notre CONCESSION Handheld FEE RECOVERY CENTER TAXE 0,31 0,93 contre ntal 2.01 LOCATION 08.000 X 12 appuyez sur Entrée USD ND total des frais oCUMENT Deposit VIsa 0450 USD 34,12 Montant taxablo à échéance Sous réserve de la vérification Frequent Flyer ****** 4193 crédit SUD EST AIRLINES RAPID REMARDS Serv client Numéro this Form 1.000-445-5664 2015 Alamo Rent A Car 2601 6 / 15"
+   }
+  ]
+ }
+}
+ 
+17:06:25.606 INFO  {"response":{"originalText":"NASHVILLE, TN 37214\nVEHICLE INFORMATION\nECONOMY 24 DOOR AUTOMATIC AVC\nECONOMY 24 DOOR AUTOMATIC AMC\ninner Name\nAlamo\neter and\nRA 437522014\n09:08 AM\nC Renta\n19-MAY-2016 ARG\nReturn\n20-MAY-2016 08:42 AM\nINTL ARE\nno\nTHE\nL\nDi JosHA NEUSTROM\nUR\n284909\nVehicle\nlevel below.\nIf Model VELOSTER\nclass charged ECAR\nlass Driven\nCAR\nState/Province\n4A0109\n7/8\n(C\nLicense\n182\nMIKms Drivon MIKm Out 899\nMIKms In 108\nCharges No Un\nPrice Amount\n3 Gals\n3,04\n9, 13*\nTime\nAM PM\n1 Days 13.25\n13.25*\nTS C\n0,00\nUNLIM MIKM 0 M/Kims\n1,50\nTray\nBUSINESS TAX\n0,09*\nNC\n2,40*\nour Handheld\nCONCESSION FEE RECOVERY\nCENTER TAX\n0,31\n0,93\nntal counter\n2.01\nRENTAL 08,000 X\n12 press Return\nUSD ND\nTotal Charges\nocument in\nDeposit VIsa 0450\nUSD 34.12\nAmount Due\ntaxablo Items\nSubject to Audit\nFrequent Flyer ******4193 Credit to\nSOUTH EST AIRLINES RAPID REMARDS\nCustomer Serv ce Number 1.000-445-5664\n2015 Alamo Rent A Car\nForm 2601 6/15\n","translatedText":"NASHVILLE, TN 37214 INFORMATIONS VEHICULE ÉCONOMIE 24 PORTE AUTOMATIQUE AVC ÉCONOMIE 24 PORTE AUTOMATIQUE AMC intérieure Nom Alamo eter et RA 437522014 09h08 C Renta 19-MAI-2016 ARG retour 20 MAI-2016 08:42 INTL SONT pas LA L Di Josha NEUSTROM UR niveau 284909 de véhicules ci-dessous. Si État Modèle classe VELOSTER ECAR chargée lass CAR Driven / Province 4A0109 7/8 (C Licence 182 MIKms Drivon MIKm Out 899 MIKms En 108 Charges Aucun Un Prix Montant 3 Gals 3,04 9, 13 * Heure AM PM 1 Jours 13.25 13.25 * TS C 0,00 Unlim MIKM 0 M / Kims 1,50 Tray BUSINESS TAX 0,09 * NC 2,40 * notre CONCESSION Handheld FEE RECOVERY CENTER TAXE 0,31 0,93 contre ntal 2.01 LOCATION 08.000 X 12 appuyez sur Entrée USD ND total des frais oCUMENT Deposit VIsa 0450 USD 34,12 Montant taxablo à échéance Sous réserve de la vérification Frequent Flyer ****** 4193 crédit SUD EST AIRLINES RAPID REMARDS Serv client Numéro this Form 1.000-445-5664 2015 Alamo Rent A Car 2601 6 / 15"}} 
+17:06:39.650 INFO  log started 
+17:06:41.798 INFO  IMG_20160118_173912_583.jpg 
+17:06:41.804 INFO  Source = en
+ 
+17:06:41.804 INFO  Target = fr
+ 
+17:06:57.930 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "banque 15/01/16 19:26 SUS 27721 US BANK PONT ROUGE R KANSAS CITY MO CARTE 7982 RECORD NO S400.00 WTHDRAWAL DE VERIFICATION VERIFICATION US BANK S400.00 TOTAL BESOIN D&#39;UN CADEAU DE VACANCES? DONNER AU, S. BANQUE VISA CARTE CADEAU nous bank.com Toutes les transactions sont soumises à la finale PRÊTEUR preuve et vérification membre FDIC"
+   }
+  ]
+ }
+}
+ 
+17:06:57.932 INFO  {"response":{"originalText":"bank\n01/15/16\n19:26 SUS 27721\nUS BANK RED BRIDGE\nR KANSAS CITY MO\nCARD\n7982\nRECORD NO\nS400.00\nWTHDRAWAL\nFROM CHECKING\nCHECKING\nU.S. BANK\nS400.00\nTOTAL\nNEED A HOLIDAY GIFT?\nGIVE A U, S. BANK VISA GIFT CARD\nus bank.com\nAll transactions are subject to final\nLENDER proof and verification Member FDIC\n","translatedText":"banque 15/01/16 19:26 SUS 27721 US BANK PONT ROUGE R KANSAS CITY MO CARTE 7982 RECORD NO S400.00 WTHDRAWAL DE VERIFICATION VERIFICATION US BANK S400.00 TOTAL BESOIN D&#39;UN CADEAU DE VACANCES? DONNER AU, S. BANQUE VISA CARTE CADEAU nous bank.com Toutes les transactions sont soumises à la finale PRÊTEUR preuve et vérification membre FDIC"}} 
+17:07:08.371 INFO  log started 
+17:07:19.117 INFO  IMG_20160609_183835_740.jpg 
+17:07:19.123 INFO  Source = en
+ 
+17:07:19.123 INFO  Target = fr
+ 
+17:07:34.763 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "banque 15/01/16 19:26 SUS 27721 US BANK PONT ROUGE R KANSAS CITY MO CARTE 7982 RECORD NO S400.00 WTHDRAWAL DE VERIFICATION VERIFICATION US BANK S400.00 TOTAL BESOIN D&#39;UN CADEAU DE VACANCES? DONNER AU, S. BANQUE VISA CARTE CADEAU nous bank.com Toutes les transactions sont soumises à la finale PRÊTEUR preuve et vérification membre FDIC"
+   }
+  ]
+ }
+}
+ 
+17:07:34.764 INFO  {"response":{"originalText":"bank\n01/15/16\n19:26 SUS 27721\nUS BANK RED BRIDGE\nR KANSAS CITY MO\nCARD\n7982\nRECORD NO\nS400.00\nWTHDRAWAL\nFROM CHECKING\nCHECKING\nU.S. BANK\nS400.00\nTOTAL\nNEED A HOLIDAY GIFT?\nGIVE A U, S. BANK VISA GIFT CARD\nus bank.com\nAll transactions are subject to final\nLENDER proof and verification Member FDIC\n","translatedText":"banque 15/01/16 19:26 SUS 27721 US BANK PONT ROUGE R KANSAS CITY MO CARTE 7982 RECORD NO S400.00 WTHDRAWAL DE VERIFICATION VERIFICATION US BANK S400.00 TOTAL BESOIN D&#39;UN CADEAU DE VACANCES? DONNER AU, S. BANQUE VISA CARTE CADEAU nous bank.com Toutes les transactions sont soumises à la finale PRÊTEUR preuve et vérification membre FDIC"}} 
+17:07:54.664 INFO  log started 
+17:08:06.551 INFO  IMG_20160424_210541_999.jpg 
+17:08:37.812 INFO  log started 
+17:08:39.554 INFO  IMG_20160609_183835_740.jpg 
+17:08:39.561 INFO  Source = en
+ 
+17:08:39.561 INFO  Target = de
+ 
+17:08:52.752 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "Willkommen bei Waka 1277 Telefon: 215-638-5640 2250 Lincoln Hwy Trevose, PA 19053/9/2016 6:12:06 PM Trx 3564759 Alvin Register"
+   }
+  ]
+ }
+}
+ 
+17:08:52.753 INFO  {"response":{"originalText":"Welcome to Waka 1277\nPhone: 215-638-5640\n2250 Lincoln Hwy\nTrevose, PA 19053\n/9/2016\n6:12:06 PM\nTrx\n3564759\nAlvin\nRegister #13\nCashier\nTotal\n$9.19\nQty\n$5.49\nBEEF STEAK BURRITO BOWL\n$0.35\nAVOCADO SPREAD\n$3.00\nWALL STREET JOURNAL\n$8.84\nSub- Total\n$0.35\nTax\n$9.19\nTotal\n$10.00\nCash\n$0.81\nChange:\nENTER TO WIN A $250 Wawa Gift Card\nGo to www. COM\nTake our survey for a chance to win\nDisponible en Espanol\nSee Rules at MyWawaVisit.com\nSurvey Code: 3564759\nStore Number: 00277\nPlease respond within 5 days\n","translatedText":"Willkommen bei Waka 1277 Telefon: 215-638-5640 2250 Lincoln Hwy Trevose, PA 19053/9/2016 6:12:06 PM Trx 3564759 Alvin Register"}} 
+14:44:36.328 INFO  log started 
+14:45:01.484 INFO  IMG_20160415_085121_964.jpg 
+14:45:01.484 INFO  Source = en
+ 
+14:45:01.484 INFO  Target = fr
+ 
+14:47:36.818 INFO  log started 
+14:49:49.502 INFO  log started 
+14:49:52.268 INFO  Capture (2).PNG 
+14:49:52.273 INFO  Source = en
+ 
+14:49:52.273 INFO  Target = fr
+ 
+14:49:54.956 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "Militaire ECHANGE Whiteman Magasin de vêtements 660) 563-3359 900-1700 lun-ven 1000-1600 Sam Fermé dimanche et jours fériés Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITAIRE SAS PLYPR HDCVR BRIN PTH506 6,95 01442129304 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 $ 32,13 $ 32,13 TOTAL MASTERCARD XXXXXXXXXXXX 7949 EXPIRATION XX / XX SNI PED BANK AUTH 01268 SEQ"
+   }
+  ]
+ }
+}
+ 
+14:49:54.956 INFO  {"response":{"originalText":"EXCHANGE\nWhiteman Military Clothing Store\n660) 563-3359\n900-1700 Mon-Fri 1000-1600 Sat\nClosed Sunday and Holidays\nStore Manager\nTrish Dillon\nDLATS\nAF PT TRUNKS L 71802009273\n16.18\nMILITARY\nSAS PLYPR\nHDCVR BRIN PTH506\n6.95\n01442129304\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\n$32.13\nTOTAL\n$32.13\nMASTERCARD\nXXXXXXXXXXXX 7949\nEXPIRY\nXX/XX SNI PED BANK\nAUTH 01268\nSEQ# 5792\n","translatedText":"Militaire ECHANGE Whiteman Magasin de vêtements 660) 563-3359 900-1700 lun-ven 1000-1600 Sam Fermé dimanche et jours fériés Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITAIRE SAS PLYPR HDCVR BRIN PTH506 6,95 01442129304 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 $ 32,13 $ 32,13 TOTAL MASTERCARD XXXXXXXXXXXX 7949 EXPIRATION XX / XX SNI PED BANK AUTH 01268 SEQ"}} 
+14:53:01.850 INFO  IMG_20160402_122916_094.jpg 
+14:53:01.853 INFO  Source = en
+ 
+14:53:01.853 INFO  Target = fr
+ 
+14:53:04.217 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "Militaire ECHANGE Whiteman Magasin de vêtements 660) 563-3359 900-1700 lun-ven 1000-1600 Sam Fermé dimanche et jours fériés Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITAIRE SAS PLYPR HDCVR BRIN PTH506 6,95 01442129304 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 $ 32,13 $ 32,13 TOTAL MASTERCARD XXXXXXXXXXXX 7949 EXPIRATION XX / XX SNI PED BANK AUTH 01268 SEQ"
+   }
+  ]
+ }
+}
+ 
+14:53:04.220 INFO  {"response":{"originalText":"EXCHANGE\nWhiteman Military Clothing Store\n660) 563-3359\n900-1700 Mon-Fri 1000-1600 Sat\nClosed Sunday and Holidays\nStore Manager\nTrish Dillon\nDLATS\nAF PT TRUNKS L 71802009273\n16.18\nMILITARY\nSAS PLYPR\nHDCVR BRIN PTH506\n6.95\n01442129304\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\nNTCH CAP ACRYLIC BLCK C90203\n4.50\n01442102895\n$32.13\nTOTAL\n$32.13\nMASTERCARD\nXXXXXXXXXXXX 7949\nEXPIRY\nXX/XX SNI PED BANK\nAUTH 01268\nSEQ# 5792\n","translatedText":"Militaire ECHANGE Whiteman Magasin de vêtements 660) 563-3359 900-1700 lun-ven 1000-1600 Sam Fermé dimanche et jours fériés Store Manager Trish Dillon DLATS AF PT TRUNKS L 71802009273 16.18 MILITAIRE SAS PLYPR HDCVR BRIN PTH506 6,95 01442129304 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 NTCH CAP ACRYLIQUE BLCK C90203 4,50 01442102895 $ 32,13 $ 32,13 TOTAL MASTERCARD XXXXXXXXXXXX 7949 EXPIRATION XX / XX SNI PED BANK AUTH 01268 SEQ"}} 
+14:54:20.776 INFO  log started 
+14:54:24.140 INFO  IMG_20160402_122916_094.jpg 
+14:54:24.154 INFO  Source = en
+ 
+14:54:24.154 INFO  Target = fr
+ 
+14:55:03.806 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "Bienvenue sur Chick-fil-A Ville Jefferson City Jefferson FSU, MO opérateur: Tom Van Voorn 573-638-0151 COPIE CLIENT 02/04/2016 12:07:41 DINE IN Numéro de commande 885293 1 Mktsld GRL 7,05 Chili Lime t FF hny Must. 1 Fries SM 1,45 1 MILITAIRE (5.05) 1 café SM 1,59 Sous-total 5,04 $ Taxes: 0,39 $ Total: $ 5,43 Total Réduction ($ 5,05) Changer $ 4,57 $ 10 $ 10,00 Registre: 3 Tran Seq No: 885293 Caissier Melody Ce fut un plaisir de vous servir! Bonne journée."
+   }
+  ]
+ }
+}
+ 
+14:55:03.808 INFO  {"response":{"originalText":"Welcome to Chick-fil-A\nJefferson City FSU\nJefferson City, MO\nOperator: Tom Van Voorn\n573-638-0151\nCUSTOMER COPY\n4/2/2016 12:07:41 PM\nDINE IN\nOrder Number\n885293\n1 Mktsld GRL\n7.05\nChili Lime\nt FF Hny Must.\n1 Fries SM\n1.45\n1 MILITARY\n(5.05)\n1 Coffee SM\n1.59\nSub Total\n$5.04\nTax:\n$0.39\nTotal:\n$5.43\nDiscount Total\n($5,05)\nChange\n$4.57\n$10\n$10.00\nRegister :3\nTran Seq No: 885293\nCashier Melody\nIt was a pleasure serving you!\nHave a wonderful day.\n","translatedText":"Bienvenue sur Chick-fil-A Ville Jefferson City Jefferson FSU, MO opérateur: Tom Van Voorn 573-638-0151 COPIE CLIENT 02/04/2016 12:07:41 DINE IN Numéro de commande 885293 1 Mktsld GRL 7,05 Chili Lime t FF hny Must. 1 Fries SM 1,45 1 MILITAIRE (5.05) 1 café SM 1,59 Sous-total 5,04 $ Taxes: 0,39 $ Total: $ 5,43 Total Réduction ($ 5,05) Changer $ 4,57 $ 10 $ 10,00 Registre: 3 Tran Seq No: 885293 Caissier Melody Ce fut un plaisir de vous servir! Bonne journée."}} 
+16:04:09.509 INFO  IMG_20160110_171139_983.jpg 
+16:04:09.510 INFO  Source = en
+ 
+16:04:09.510 INFO  Target = fr
+ 
+16:04:23.775 INFO  {
+ "data": {
+  "translations": [
+   {
+    "translatedText": "LA HAWTHORNE MIXX 913-338-4000 11942 Roe Ave Leawood, KS 66209 Check Tab Caissier Heure Date 340849 3530 1111 18:18:30 02/01/2016 Salad Wrap 8,95 Nut Santé 10,99 alimentaire Sous-total 19,94 fontaine de glace T 2,20 Beverage Sous-total 2,20 22,14 SUB tOTAL 2.18 Taxe de vente 24,32 Reçu tOTAL occasion: master Card Merci! Visitez-nous à mixxingitup.com Envoyer des commentaires à info@mixxingitup.com"
+   }
+  ]
+ }
+}
+ 
+16:04:23.776 INFO  {"response":{"originalText":"THE MIXX\nHAWTHORNE\n913-338-4000\n11942 Roe Ave\nLeawood, KS 66209\nCheck Tab Cashier Time\nDate\n340849 3530 1111\n6:18:30 PM 1/2/2016\nSalad Wrap\n8.95\nHealth Nut\n10.99\nFood Sub-Total\n19.94\nFountain Ice T\n2.20\nBeverage Sub-Total\n2.20\n22.14\nSUB TOTAL\n2.18\nSales Tax\n24.32\nTOTAL\nReceipt Used: Master Card\nThank You!\nVisit Us at mixxingitup.com\nSend Feedback to info@mixxingitup.com\n","translatedText":"LA HAWTHORNE MIXX 913-338-4000 11942 Roe Ave Leawood, KS 66209 Check Tab Caissier Heure Date 340849 3530 1111 18:18:30 02/01/2016 Salad Wrap 8,95 Nut Santé 10,99 alimentaire Sous-total 19,94 fontaine de glace T 2,20 Beverage Sous-total 2,20 22,14 SUB tOTAL 2.18 Taxe de vente 24,32 Reçu tOTAL occasion: master Card Merci! Visitez-nous à mixxingitup.com Envoyer des commentaires à info@mixxingitup.com"}} 
